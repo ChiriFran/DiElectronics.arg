@@ -1,10 +1,15 @@
-const sliderHero = document.getElementById('slider-hero');
-const slidesHero = document.querySelectorAll('.slide-hero');
+const sliderHero = document.getElementById("slider-hero");
+const slidesHero = document.querySelectorAll(".slide-hero");
 let indexHero = 0;
 let intervalId;
 
+// Agregar la transición dinámicamente
+sliderHero.style.transition = "transform 1.5s ease-in-out"; // Transición de desplazamiento
+
 function showSlideHero() {
-  sliderHero.style.transform = `translateX(${-indexHero * 100 / slidesHero.length}%)`;
+  sliderHero.style.transform = `translateX(${
+    (-indexHero * 100) / slidesHero.length
+  }%)`;
 }
 
 function nextSlideHero() {
