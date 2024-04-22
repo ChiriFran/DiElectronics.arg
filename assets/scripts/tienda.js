@@ -28,16 +28,14 @@ function cargarProductos(productosMostrar = productos) {
 
   productosPagina.forEach((producto) => {
     const div = document.createElement("div");
-    div.classList.add("producto");
+    div.classList.add("productoContainer");
     div.innerHTML = `
         <div class="producto">
             <img src="${producto.imagen}" alt="${producto.titulo}" class="producto-imagen">
-            <div class="image-hover">
-            <button class="producto-agregar" id="${producto.id}"></button>
-            </div>
         </div>
         <h2 class="producto-titulo">${producto.titulo}</h2>
         <h3 class="producto-precio">$${producto.precio}</h3>
+        <button class="btn-96 producto-agregar" id="${producto.id}"><span>Agregar</span></button>
     `;
     contenedorProductos.append(div);
   });

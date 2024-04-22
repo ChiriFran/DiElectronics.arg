@@ -29,7 +29,7 @@
           <i class="bi bi-x"></i>
         </button>
         <header>
-          <h1 class="logo">DiElectronics.arg</h1>
+          <h1 class="logo">DiElectronics.arg - Tienda</h1>
         </header>
         <!DOCTYPE html>
         <html lang="en">
@@ -52,8 +52,7 @@
                 </li>
                 <li>
                   <button id="todos" class="boton-menu boton-categoria">
-                    <i class="bi bi-bag-plus"></i> Todos los
-                    productos
+                    <i class="bi bi-bag-plus"></i> Todos los productos
                   </button>
                 </li>
                 <li class="dropdown">
@@ -101,21 +100,24 @@
           </body>
         </html>
 
-        <section class="infoDolar">
-          <div class="glassCard">
-            <h2 id="moneda">Cotizacion</h2>
-            <p id="fechaActualizacion">14/2/2024, 15:32.</p>
-            <ul>
-              <li><p id="compra">Compra:</p></li>
-              <li><p id="venta">Venta:</p></li>
-            </ul>
-          </div>
-        </section>
+        <div class="infoDolar" style="display: none">
+          <button id="cerrarInfoBtn">Cerrar</button>
+          <h2>Información del Dólar</h2>
+          <ul class="textosDolar">
+            <li><p id="fechaActualizacion">fecha</p></li>
+            <li><p id="moneda">usd</p></li>
+            <li><p id="compra">compra</p></li>
+            <li><p id="venta">venta</p></li>
+          </ul>
+        </div>
+
+        <button id="mostrarInfoBtn">Mostrar Información</button>
+
         <footer>
           <section class="mediosDePago">
-            <img src="./img/icons/visa-svgrepo-com.svg" alt="" />
-            <img src="./img/icons/mastercard-svgrepo-com.svg" alt="" />
-            <img src="./img/icons/american-express-svgrepo-com.svg" alt="" />
+            <img src="./assets/img/icons/visa.svg" alt="Visa" />
+            <img src="./assets/img/icons/mastercard.svg" alt="Mastercard" />
+            <img src="./assets/img/icons/american.svg" alt="American Express" />
           </section>
           <p class="texto-footer">© 2024 dielectronics.arg</p>
         </footer>
