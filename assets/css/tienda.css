@@ -220,12 +220,16 @@ body {
 
 .dropdown-content {
     display: none;
+    width: 80%;
+    padding-left: 14%;
+    flex-flow: column;
+    align-items: center;
     position: absolute;
     background-color: var(--clr-main);
     color: var(--clr-white);
     min-width: 160px;
     z-index: 1;
-    transition: .7s;
+    transition: 1s;
 }
 
 .dropdown-content a {

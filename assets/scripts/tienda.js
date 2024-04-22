@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
   dropdowns.forEach(function (dropbtn) {
     dropbtn.addEventListener("click", function (event) {
       var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
+      if (dropdownContent.style.display === "flex") {
         dropdownContent.style.display = "none";
       } else {
         // Close all other dropdowns if open
@@ -216,22 +216,19 @@ document.addEventListener("DOMContentLoaded", function () {
           content.style.display = "none";
         });
         // Open this dropdown
-        dropdownContent.style.display = "block";
+        dropdownContent.style.display = "flex";
       }
       event.stopPropagation();
     });
   });
 
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn")) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      for (var i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.style.display === "block") {
-          openDropdown.style.display = "none";
-        }
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function (event) {
+    var dropdownContents = document.querySelectorAll(".dropdown-content");
+    dropdownContents.forEach(function (content) {
+      if (!content.contains(event.target)) {
+        content.style.display = "none";
       }
-    }
-  };
+    });
+  });
 });

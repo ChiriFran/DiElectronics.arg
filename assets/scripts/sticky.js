@@ -1,12 +1,12 @@
 function handleScroll() {
-  const isSticky = window.scrollY > 250;
+  const isSticky = window.scrollY > 200;
   applyStickyStyles(isSticky);
   handleStickyActions(isSticky);
 }
 
 function applyStickyStyles(isSticky) {
   const nav = document.querySelector(".nav");
-  const logo = document.querySelector(".navLogo");
+  const headerTitle = document.querySelector(".headerTitle");
 
   const stickyLinks = document.querySelectorAll(".stickyLinks");
   const iconNavBarMobileLogo = document.getElementById("navBarMobileLogo");
@@ -26,13 +26,11 @@ function applyStickyStyles(isSticky) {
     link.style.visibility = visibility;
   });
 
-  // Cambiar color del subrayado del texto dentro del elemento .underline-hover::before
+  headerTitle.classList.toggle("headerSticky", isSticky);
+
   const underlineHovers = document.querySelectorAll(".underlined-hover");
   underlineHovers.forEach((underlineHover) => {
-    underlineHover.style.setProperty(
-      "--colorFont",
-      isSticky ? "#fff" : "#000"
-    );
+    underlineHover.style.setProperty("--colorFont", isSticky ? "#fff" : "#000");
   });
 }
 
