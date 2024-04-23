@@ -215,6 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         // Open this dropdown
         dropdownContent.style.display = "flex";
+        dropdownContent.classList.add("dropdow-active");
       }
       event.stopPropagation();
     });

@@ -29,89 +29,72 @@
           <i class="bi bi-x"></i>
         </button>
         <header>
-          <h1 class="logo">DiElectronics.arg - Tienda</h1>
+          <h1 class="logo">dielectronics.arg - Tienda</h1>
         </header>
-        <!DOCTYPE html>
-        <html lang="en">
-          <head>
-            <meta charset="UTF-8" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1.0"
-            />
-            <title>Navegación con Desplegables</title>
-            <link rel="stylesheet" href="styles.css" />
-          </head>
-          <body>
-            <nav>
-              <ul class="menu">
-                <li>
-                  <a href="./index.html" class="boton-menu boton-categoria"
-                    ><i class="bi bi-house"></i> Inicio</a
-                  >
-                </li>
-                <li>
-                  <button id="todos" class="boton-menu boton-categoria">
-                    <i class="bi bi-bag-plus"></i> Todos los productos
-                  </button>
-                </li>
-                <li class="dropdown">
-                  <button class="dropbtn boton-menu boton-categoria">
-                    <i class="bi bi-arrow-down"></i> Apple
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#" id="apple-celulares">Celulares</a>
-                    <a href="#" id="apple-auriculares">Auriculares</a>
-                    <a href="#" id="apple-computadoras">Relojes</a>
-                    <a href="#" id="apple-computadoras">Computadoras</a>
-                  </div>
-                </li>
-                <li class="dropdown">
-                  <button class="dropbtn boton-menu boton-categoria">
-                    <i class="bi bi-arrow-down"></i> Samsung
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#" id="samsung-celulares">Celulares</a>
-                    <a href="#" id="samsung-auriculares">Auriculares</a>
-                    <a href="#" id="apple-computadoras">Relojes</a>
-                    <a href="#" id="samsung-computadoras">Computadoras</a>
-                  </div>
-                </li>
-                <li class="dropdown">
-                  <button class="dropbtn boton-menu boton-categoria">
-                    <i class="bi bi-arrow-down"></i> Xiaomi
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#" id="xiaomi-celulares">Celulares</a>
-                    <a href="#" id="xiaomi-auriculares">Auriculares</a>
-                    <a href="#" id="apple-computadoras">Relojes</a>
-                    <a href="#" id="xiaomi-computadoras">Computadoras</a>
-                  </div>
-                </li>
-                <li>
-                  <a class="boton-menu boton-carrito" href="./carrito.html">
-                    <i class="bi bi-cart-fill"></i> Carrito
-                    <span id="numerito" class="numerito">0</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <script src="script.js"></script>
-          </body>
-        </html>
-
-        <div class="infoDolar" style="display: none">
-          <button id="cerrarInfoBtn">Cerrar</button>
-          <h2>Información del Dólar</h2>
-          <ul class="textosDolar">
-            <li><p id="fechaActualizacion">fecha</p></li>
-            <li><p id="moneda">usd</p></li>
-            <li><p id="compra">compra</p></li>
-            <li><p id="venta">venta</p></li>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="./index.html" class="boton-menu boton-categoria"
+                ><i class="bi bi-house"></i> Inicio</a
+              >
+            </li>
+            <li>
+              <button id="todos" class="boton-menu boton-categoria">
+                <i class="bi bi-bag-plus"></i> Todos los productos
+              </button>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn boton-menu boton-categoria">
+                <i class="bi bi-arrow-down"></i> Apple
+              </button>
+              <div class="dropdown-content">
+                <a href="#" id="apple-celulares"><img src="./assets/img/icons/telefono.svg" width="15px" alt="">Celulares</a>
+                <a href="#" id="apple-auriculares"><img src="./assets/img/icons/auriculares.svg" width="15px" alt="">Auriculares</a>
+                <a href="#" id="apple-relojes"><img src="./assets/img/icons/reloj.svg" width="15px" alt="">Relojes</a>
+                <a href="#" id="apple-computadoras"><img src="./assets/img/icons/computadora.svg" width="15px" alt="">Computadoras</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn boton-menu boton-categoria">
+                <i class="bi bi-arrow-down"></i> Samsung
+              </button>
+              <div class="dropdown-content">
+                <a href="#" id="samsung-celulares"><img src="./assets/img/icons/telefono.svg" width="15px" alt="">Celulares</a>
+                <a href="#" id="samsung-auriculares"><img src="./assets/img/icons/auriculares.svg" width="15px" alt="">Auriculares</a>
+                <a href="#" id="samsung-relojes"><img src="./assets/img/icons/reloj.svg" width="15px" alt="">Relojes</a>
+                <a href="#" id="samsung-computadoras"><img src="./assets/img/icons/computadora.svg" width="15px" alt="">Computadoras</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn boton-menu boton-categoria">
+                <i class="bi bi-arrow-down"></i> Xiaomi
+              </button>
+              <div class="dropdown-content">
+                <a href="#" id="xiaomi-celulares"><img src="./assets/img/icons/telefono.svg" width="15px" alt="">Celulares</a>
+                <a href="#" id="xiaomi-auriculares"><img src="./assets/img/icons/auriculares.svg" width="15px" alt="">Auriculares</a>
+                <a href="#" id="apple-relojes"><img src="./assets/img/icons/reloj.svg" width="15px" alt="">Relojes</a>
+                <a href="#" id="xiaomi-computadoras"><img src="./assets/img/icons/computadora.svg" width="15px" alt="">Computadoras</a>
+              </div>
+            </li>
+            <li>
+              <a class="boton-menu boton-carrito" href="./carrito.html">
+                <i class="bi bi-cart-fill"></i> Carrito
+                <span id="numerito" class="numerito">0</span>
+              </a>
+            </li>
           </ul>
-        </div>
+        </nav>
 
-        <button id="mostrarInfoBtn">Mostrar Información</button>
+        <div class="tooltipContainer">
+          <div class="tooltip">
+            <button>USD AHORA!</button>
+            <div class="tooltiptext">
+              <p id="fechaActualizacion">Fecha:</p>
+              <p id="compra">Compra:</p>
+              <p id="venta">Venta:</p>
+            </div>
+          </div>
+        </div>
 
         <footer>
           <section class="mediosDePago">
@@ -122,6 +105,7 @@
           <p class="texto-footer">© 2024 dielectronics.arg</p>
         </footer>
       </aside>
+
       <main>
         <h2 class="titulo-principal" id="titulo-principal">
           Todos los productos
@@ -130,6 +114,7 @@
           <!-- Esto se va a rellenar con JS -->
         </div>
       </main>
+
     </div>
 
     <script
