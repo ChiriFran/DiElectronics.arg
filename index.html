@@ -120,24 +120,36 @@
         </div>
       </section>
 
-      <div class="container">
-        <div data-text="Samsung" style="--r:-15;" class="glass">
-          <a href="#">
-            <img src="./assets/img/productos/logosMarca/samsungLogo.svg" width="150px" alt="Samsung">
-          </a>
-        </div>
-        <div data-text="Apple" style="--r:5;" class="glass">
-          <a href="#">
-            <img src="./assets/img/productos/logosMarca/apple.svg" width="150px" alt="Apple">
-          </a>
-        </div>
-        <div data-text="Xiaomi" style="--r:25;" class="glass">
-          <a href="#">
-            <img src="./assets/img/productos/logosMarca/xiaomiLogo.svg" width="150px" alt="Xiaomi">
-          </a>
+      <div class="outer-container">
+        <div class="inner-container">
+          <div class="scroll-container">
+            <div class="container">
+              <div data-text="Samsung" style="--r:-15;" class="glass">
+                <a href="#">
+                  <img src="./assets/img/productos/logosMarca/samsungLogo.svg" width="150px" alt="Samsung">
+                </a>
+              </div>
+              <div data-text="Apple" style="--r:5;" class="glass">
+                <a href="#">
+                  <img src="./assets/img/productos/logosMarca/apple.svg" width="150px" alt="Apple">
+                </a>
+              </div>
+              <div data-text="Xiaomi" style="--r:25;" class="glass">
+                <a href="#">
+                  <img src="./assets/img/productos/logosMarca/xiaomiLogo.svg" width="150px" alt="Xiaomi">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
+
+      <div class="dots-container">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
 
       <section id="nuevosLanzamientosSlider">
         <div class="slider-container-new">
@@ -262,112 +274,235 @@
 
       <footer>
         <div id="footerContainer">
-          <div class="footer-left">
-            <nav>
-              <ul>
-                <li><a href="#lineasDestacadas">Inicio</a></li>
-                <li><a href="#nuevosLanzamientosSlider">Tienda</a></li>
-                <li><a href="#nuestrosFavoritos">News</a></li>
-                <li><a href="#nuestrosFavoritos">OpenBox</a></li>
-                <li><a href="#nuestrosFavoritos">Contacto</a></li>
-              </ul>
-            </nav>
-            <div class="footer-midle-info">
-              <h3>Ayuda</h3>
-              <button id="botonAbrirModal">Preguntas frecuentes</button>
-              <dialog id="modalContainer">
-                <div id="modal">
-                  <img
-                    src="./media/img/logo/logoBlancoTienda.png"
-                    id="modalLogo"
-                    alt=""
-                  />
-                  <button id="botonCerrarModal">
-                    <img
-                      src="./assets/img/icons/close.svg"
-                      alt="Cerrar ventana emergente"
-                    />
-                  </button>
-                  <h2>Preguntas frecuentes:</h2>
-                  <h3>¿Cuáles son los medios de pago?:</h3>
-                  <p>
-                    Podés abonar a través de Mercado Pago con tarjeta de debito
-                    o credito en hasta 3 cuotas sin interés con Visa,
-                    Mastercard, American Express y Cabal emitidas por bancos.
-                  </p>
-                  <h3>¿Puedo pagar en cuotas?:</h3>
-                  <p>
-                    Si. podes abonar pagar en 1 o 3 cuotas sin interes simpre
-                    que sean Visa, Mastercard, American Express y Cabal emitias
-                    por bancos.
-                  </p>
-                  <h3>¿Realizan envíos?:</h3>
-                  <p>
-                    Si. Hacemos envíos a todo el país. El costo de envío depende
-                    del tamaño del producto y la provincia a la que quieras
-                    enviarlo, podés consultarlo en la publicación del producto,
-                    debajo del precio y los medios de pago, en la sección que
-                    dice “Calcular costos de envío”. También podés consultar el
-                    costo del total de tus productos en el carrito de compras.
-                    Para esto, tenés que ingresar tu código postal y se te
-                    desplegarán tanto las sucursales disponibles para retiro
-                    como el costo de envío a tu domicilio
-                  </p>
-                  <h3>¿Cuáles son los tiempos de entrega?:</h3>
-                  <p>
-                    Los tiempos de entrega dependerán de los productos que
-                    compres y del lugar de entrega. Cuando se realiza un envío
-                    dentro de CABA y GBA hasta 50 km, se entregará en su
-                    domicilio dentro de los 4 días hábiles posteriores al
-                    despacho. En el interior del país demorará puede ser de 4 a
-                    7 días hábiles. Salvo las provincias más alejadas, en las
-                    que puede demorar un poco más. El correo entregará en
-                    domicilio dentro de la franja horaria de lunes a viernes de
-                    9 a 17 hs.
-                  </p>
-                  <h3>¿Quién puede recibir mi pedido?:</h3>
-                  <p>
-                    Puede recibir tu pedido cualquier persona mayor de 18 años.
-                    Si va a ser otra la persona que va a recibirlo, te pedimos
-                    que lo aclares al momento de realizar el pedido.
-                  </p>
-                  <h3>
-                    ¿Qué pasa si el correo viene a domicilio y no me encuentra?:
-                  </h3>
-                  <p>
-                    El correo irá a tu domicilio en dos oportunidades. En caso
-                    de que no se encuentre nadie capaz de recibir el pedido en
-                    el domicilio, el paquete volverá a la Sucursal de Andreani y
-                    estará allí los siguientes cinco días. Contactanos para
-                    coordinar su retiro.
-                  </p>
-                  <h3>
-                    ¿Quién puede retirar el pedido y qué necesita para
-                    retirarlo?:
-                  </h3>
-                  <p>
-                    Puede retirar tu pedido cualquier persona mayor de 18 años.
-                    En caso de que el pedido sea retirado por una persona
-                    distinta al titular de la compra, el titular deberá
-                    enviarnos un email a ventasonline@morph.com.ar con los datos
-                    de la persona autorizada (Nombre, Apellido, DNI). Al
-                    acercarse a línea de caja, podrán retirar cualquiera de los
-                    dos únicamente con el nombre de la persona titular del
-                    pedido o el número de operación.
-                  </p>
-                  <h3>MI DUDA NO ESTA EN LA LISTA</h3>
-                  <p>
-                    <b>Contactate con nosotros.</b><br /><br />
-                    (011)-48285600<br />
-                    CarlaDecoAyuda@gmail.com
-                  </p>
-                  <button id="botonCerrarModal2">
-                    <img src="./assets/img/icons/volver.svg" alt="" />
-                  </button>
+          <ul>
+            <li>
+              <div class="footer-left">
+                <nav>
+                  <ul>
+                    <li><a href="#lineasDestacadas">Inicio</a></li>
+                    <li><a href="#nuevosLanzamientosSlider">Tienda</a></li>
+                    <li><a href="#nuestrosFavoritos">News</a></li>
+                    <li><a href="#nuestrosFavoritos">OpenBox</a></li>
+                    <li><a href="#nuestrosFavoritos">Contacto</a></li>
+                  </ul>
+                </nav>
+                <div class="footer-midle-info">
+                  <h3>Ayuda</h3>
+                  <button class="botonAbrirModal">Medios de Pago</button>
+                  <dialog class="modalContainer">
+                    <div class="modal">
+                      <img
+                        src="./media/img/logo/logoBlancoTienda.png"
+                        class="modalLogo"
+                        alt=""
+                      />
+                      <button class="botonCerrarModal">
+                        <img
+                          src="./assets/img/icons/close.svg"
+                          alt="Cerrar ventana emergente"
+                        />
+                      </button>
+                      <h3>¿Cuáles son los medios de pago?:</h3>
+                      <p>
+                        Podés abonar a través de Mercado Pago con tarjeta de debito
+                        o credito en hasta 3 cuotas sin interés con Visa,
+                        Mastercard, American Express y Cabal emitidas por bancos.
+                      </p>
+                      <button class="botonCerrarModal2">
+                        <img src="./assets/img/icons/volver.svg" alt="volver" />
+                      </button>
+                    </div>
+                  </dialog>
                 </div>
-              </dialog>
-            </div>
-          </div>
+              </div>
+            </li>
+            <li>
+              <div class="footer-left-info">
+                <h3>Envios</h3>
+                <button class="botonAbrirModal">Realizan Envios?</button>
+                <dialog class="modalContainer">
+                  <div class="modal">
+                    <img
+                      src="./media/img/logo/logoBlancoTienda.png"
+                      class="modalLogo"
+                      alt=""
+                    />
+                    <button class="botonCerrarModal">
+                      <img
+                        src="./assets/img/icons/close.svg"
+                        alt="Cerrar ventana emergente"
+                      />
+                    </button>
+                  
+                    <h3>¿Realizan envíos?:</h3>
+                    <p>
+                      Si. Hacemos envíos a todo el país. El costo de envío depende
+                      del tamaño del producto y la provincia a la que quieras
+                      enviarlo, podés consultarlo en la publicación del producto,
+                      debajo del precio y los medios de pago, en la sección que
+                      dice “Calcular costos de envío”.
+                    </p>
+                    <button class="botonCerrarModal2">
+                      <img src="./assets/img/icons/volver.svg" alt="volver" />
+                    </button>
+                  </div>
+                </dialog>
+                <button class="botonAbrirModal">Tiempos de entrega</button>
+                <dialog class="modalContainer">
+                  <div class="modal">
+                    <img
+                      src="./media/img/logo/logoBlancoTienda.png"
+                      class="modalLogo"
+                      alt=""
+                    />
+                    <button class="botonCerrarModal">
+                      <img
+                        src="./assets/img/icons/close.svg"
+                        alt="Cerrar ventana emergente"
+                      />
+                    </button>
+                    <h3>¿Cuáles son los tiempos de entrega?:</h3>
+                    <p>
+                      Los tiempos de entrega dependerán de los productos que
+                      compres y del lugar de entrega. Cuando se realiza un envío
+                      dentro de CABA y GBA hasta 50 km, se entregará en su
+                      domicilio dentro de los 4 días hábiles posteriores al
+                      despacho. En el interior del país demorará puede ser de 4 a
+                      7 días hábiles. Salvo las provincias más alejadas, en las
+                      que puede demorar un poco más. El correo entregará en
+                      domicilio dentro de la franja horaria de lunes a viernes de
+                      9 a 17 hs.
+                    </p>
+                    <button class="botonCerrarModal2">
+                      <img src="./assets/img/icons/volver.svg" alt="volver" />
+                    </button>
+                  </div>
+                </dialog>
+                <button class="botonAbrirModal">Info de Envios</button>
+                <dialog class="modalContainer">
+                  <div class="modal">
+                    <img
+                      src="./media/img/logo/logoBlancoTienda.png"
+                      class="modalLogo"
+                      alt=""
+                    />
+                    <button class="botonCerrarModal">
+                      <img
+                        src="./assets/img/icons/close.svg"
+                        alt="Cerrar ventana emergente"
+                      />
+                    </button>
+                    <h3>¿Cuáles son los tiempos de entrega?:</h3>
+                    <p>
+                      Los tiempos de entrega dependerán de los productos que
+                      compres y del lugar de entrega. Cuando se realiza un envío
+                      dentro de CABA y GBA hasta 50 km, se entregará en su
+                      domicilio dentro de los 4 días hábiles posteriores al
+                      despacho. En el interior del país demorará puede ser de 4 a
+                      7 días hábiles. Salvo las provincias más alejadas, en las
+                      que puede demorar un poco más. El correo entregará en
+                      domicilio dentro de la franja horaria de lunes a viernes de
+                      9 a 17 hs.
+                    </p>
+                    <button class="botonCerrarModal2">
+                      <img src="./assets/img/icons/volver.svg" alt="volver" />
+                    </button>
+                  </div>
+                </dialog>
+                <h3>Envios</h3>
+                <button class="botonAbrirModal">Realizan Envios?</button>
+                <dialog class="modalContainer">
+                  <div class="modal">
+                    <img
+                      src="./media/img/logo/logoBlancoTienda.png"
+                      class="modalLogo"
+                      alt=""
+                    />
+                    <button class="botonCerrarModal">
+                      <img
+                        src="./assets/img/icons/close.svg"
+                        alt="Cerrar ventana emergente"
+                      />
+                    </button>
+                  
+                    <h3>¿Realizan envíos?:</h3>
+                    <p>
+                      Si. Hacemos envíos a todo el país. El costo de envío depende
+                      del tamaño del producto y la provincia a la que quieras
+                      enviarlo, podés consultarlo en la publicación del producto,
+                      debajo del precio y los medios de pago, en la sección que
+                      dice “Calcular costos de envío”.
+                    </p>
+                    <button class="botonCerrarModal2">
+                      <img src="./assets/img/icons/volver.svg" alt="volver" />
+                    </button>
+                  </div>
+                </dialog>
+                <button class="botonAbrirModal">Tiempos de entrega</button>
+                <dialog class="modalContainer">
+                  <div class="modal">
+                    <img
+                      src="./media/img/logo/logoBlancoTienda.png"
+                      class="modalLogo"
+                      alt=""
+                    />
+                    <button class="botonCerrarModal">
+                      <img
+                        src="./assets/img/icons/close.svg"
+                        alt="Cerrar ventana emergente"
+                      />
+                    </button>
+                    <h3>¿Cuáles son los tiempos de entrega?:</h3>
+                    <p>
+                      Los tiempos de entrega dependerán de los productos que
+                      compres y del lugar de entrega. Cuando se realiza un envío
+                      dentro de CABA y GBA hasta 50 km, se entregará en su
+                      domicilio dentro de los 4 días hábiles posteriores al
+                      despacho. En el interior del país demorará puede ser de 4 a
+                      7 días hábiles. Salvo las provincias más alejadas, en las
+                      que puede demorar un poco más. El correo entregará en
+                      domicilio dentro de la franja horaria de lunes a viernes de
+                      9 a 17 hs.
+                    </p>
+                    <button class="botonCerrarModal2">
+                      <img src="./assets/img/icons/volver.svg" alt="volver" />
+                    </button>
+                  </div>
+                </dialog>
+                <button class="botonAbrirModal">Info de Envios</button>
+                <dialog class="modalContainer">
+                  <div class="modal">
+                    <img
+                      src="./media/img/logo/logoBlancoTienda.png"
+                      class="modalLogo"
+                      alt=""
+                    />
+                    <button class="botonCerrarModal">
+                      <img
+                        src="./assets/img/icons/close.svg"
+                        alt="Cerrar ventana emergente"
+                      />
+                    </button>
+                    <h3>¿Cuáles son los tiempos de entrega?:</h3>
+                    <p>
+                      Los tiempos de entrega dependerán de los productos que
+                      compres y del lugar de entrega. Cuando se realiza un envío
+                      dentro de CABA y GBA hasta 50 km, se entregará en su
+                      domicilio dentro de los 4 días hábiles posteriores al
+                      despacho. En el interior del país demorará puede ser de 4 a
+                      7 días hábiles. Salvo las provincias más alejadas, en las
+                      que puede demorar un poco más. El correo entregará en
+                      domicilio dentro de la franja horaria de lunes a viernes de
+                      9 a 17 hs.
+                    </p>
+                    <button class="botonCerrarModal2">
+                      <img src="./assets/img/icons/volver.svg" alt="volver" />
+                    </button>
+                  </div>
+                </dialog>
+              </div>
+            </li>
+          </ul>
           <div class="footer-right">
             <div class="social-media">
               <div class="social-icons">

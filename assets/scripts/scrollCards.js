@@ -26,3 +26,29 @@ window.addEventListener("scroll", applyRotationEffect);
 
 // Aplicar el efecto de rotación cuando la página carga por primera vez si el contenedor está en la vista
 applyRotationEffect();
+
+/* navegacion scroll cards */
+document.addEventListener("DOMContentLoaded", function () {
+  const dots = document.querySelectorAll(".dot");
+  const container = document.querySelector(".inner-container");
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      scrollTo(index);
+      setActiveDot(index);
+    });
+  });
+
+  function scrollTo(index) {
+    const scrollAmount = container.offsetWidth * index;
+    container.scrollTo({
+      left: scrollAmount,
+      behavior: "smooth",
+    });
+  }
+
+  function setActiveDot(index) {
+    dots.forEach((dot) => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+  }
+});
