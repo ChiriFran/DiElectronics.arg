@@ -7,7 +7,6 @@ function applyStickyStyles(isSticky) {
   const nav = document.querySelector(".nav");
   const headerTitle = document.querySelector(".headerTitle");
 
-  const stickyLinks = document.querySelectorAll(".stickyLinks");
   const iconNavBarMobileLogo = document.getElementById("navBarMobileLogo");
   const iconNavBarMobile = document.getElementById("navBarMobile");
 
@@ -20,10 +19,6 @@ function applyStickyStyles(isSticky) {
   iconNavBarMobileLogo.style.visibility = visibility;
   iconNavBarMobileLogo.style.position = position;
 
-  stickyLinks.forEach((link) => {
-    link.style.position = position;
-    link.style.visibility = visibility;
-  });
 
   headerTitle.classList.toggle("headerSticky", isSticky);
 

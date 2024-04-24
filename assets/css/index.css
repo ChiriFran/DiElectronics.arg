@@ -35,6 +35,7 @@ header {
   position: relative;
   text-decoration: none;
   color: var(--colorFont);
+  z-index: 100000;
 }
 
 .headerSticky {
@@ -1228,6 +1229,10 @@ footer nav ul li:hover {
   .Y {
     width: 1.5em;
     height: 1px;
+  }
+
+  .modalContainer {
+    height: 50vh;
   }
 
   .modal h3 {

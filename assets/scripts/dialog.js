@@ -3,13 +3,13 @@ const modals = document.querySelectorAll(".modalContainer");
 const botonesAbrirModal = document.querySelectorAll(".botonAbrirModal");
 const botonesCerrarModal = document.querySelectorAll(".botonCerrarModal");
 
+
 // Iterar sobre cada botón de abrir modal y agregar el event listener correspondiente
 botonesAbrirModal.forEach((botonAbrir, index) => {
   const modal = modals[index]; // Seleccionar el modal correspondiente al botón actual
   botonAbrir.addEventListener("click", () => {
     modal.showModal();
-    document.body.style.filter = "blur(3px)";
-    document.body.style.overflow = "hidden";
+
   });
 });
 
@@ -18,8 +18,7 @@ botonesCerrarModal.forEach((botonCerrar) => {
   botonCerrar.addEventListener("click", () => {
     const modal = botonCerrar.closest(".modalContainer"); // Buscar el modal padre del botón de cerrar
     modal.close();
-    document.body.style.filter = "blur(0)";
-    document.body.style.overflow = "auto";
+
   });
 });
 
@@ -34,8 +33,7 @@ modals.forEach((modal) => {
       e.clientY > dialogDimensions.bottom
     ) {
       modal.close();
-      document.body.style.filter = "blur(0)";
-      document.body.style.overflow = "auto";
+
     }
   });
 });
