@@ -33,577 +33,543 @@
     <header>
       <h1><a class="headerTitle" href="./index.html">dielectronics.arg</a></h1>
     </header>
-      <section id="navBarMobile" class="sticky-nav">
-        <a href="./index.html">
-          <img
-            id="navBarMobileLogo"
-            src="./assets/img/icons/logo.png"
-            width="80px"
-            alt=""
-          />
-        </a>
-        <button class="abrirMenu" id="abrir" class="abrir">
-          <i class="bi bi-list"></i>
-        </button>
-      </section>
+    <section id="navBarMobile" class="sticky-nav">
+      <a href="./index.html">
+        <img
+          id="navBarMobileLogo"
+          src="./assets/img/icons/logo.png"
+          width="80px"
+          alt=""
+        />
+      </a>
+      <button class="abrirMenu" id="abrir" class="abrir">
+        <i class="bi bi-list"></i>
+      </button>
+    </section>
 
-      <nav class="nav" id="nav">
-        <button class="cerrarMenu" id="cerrar">
-          <i class="bi bi-x-lg"></i>
-        </button>
+    <nav class="nav" id="nav">
+      <button class="cerrarMenu" id="cerrar">
+        <i class="bi bi-x-lg"></i>
+      </button>
 
-        <ul class="navList">
-          <li>
-            <a id="mueblesBtn" class="underlined-hover" href="./index.html">Inicio</a>
-          </li>
-          <li>
-            <a id="mueblesBtn" class="underlined-hover" href="./tienda.html">Tienda</a>
-          </li>
-          <li>
-            <a id="mesasBtn" class="underlined-hover" href="#">Iphones New</a>
-          </li>
-          <li>
-            <a id="sillasBtn" class="underlined-hover" href="#">Iphones Openbox</a>
-          </li>
-          <li>
-            <a id="sillasBtn" class="underlined-hover" href="#">Apple</a>
-          </li>
-          <li>
-            <a id="sillasBtn" class="underlined-hover" href="#">Samsung</a>
-          </li>
-          <li>
-            <a id="sillasBtn" class="underlined-hover" href="#">Xiaomi</a>
-          </li>
-          <li>
-            <a id="sillasBtn" class="underlined-hover" href="#">Contacto</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="navList">
+        <li>
+          <a id="mueblesBtn" class="underlined-hover" href="./index.html">Inicio</a>
+        </li>
+        <li>
+          <a id="mueblesBtn" class="underlined-hover" href="./tienda.html">Tienda</a>
+        </li>
+        <li>
+          <a id="mesasBtn" class="underlined-hover" href="#">Iphones New</a>
+        </li>
+        <li>
+          <a id="sillasBtn" class="underlined-hover" href="#">Iphones Openbox</a>
+        </li>
+        <li>
+          <a id="sillasBtn" class="underlined-hover" href="#">Apple</a>
+        </li>
+        <li>
+          <a id="sillasBtn" class="underlined-hover" href="#">Samsung</a>
+        </li>
+        <li>
+          <a id="sillasBtn" class="underlined-hover" href="#">Xiaomi</a>
+        </li>
+        <li>
+          <a id="sillasBtn" class="underlined-hover" href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="slider-container-hero">
-        <div class="slider-content-hero" id="slider-hero">
-          <div class="slide-hero">
-            <img src="./assets/img/hero/hero-iphone-15.png" alt="Slide 1" />
+    <div class="slider-container-hero">
+      <div class="slider-content-hero" id="slider-hero">
+        <div class="slide-hero">
+          <img src="./assets/img/hero/hero-iphone-15.png" alt="Slide 1" />
+        </div>
+        <div class="slide-hero">
+          <img src="./assets/img/hero/hero-watch.png" alt="Slide 2" />
+        </div>
+        <div class="slide-hero">
+          <img src="./assets/img/hero/hero-iphone-15-white.png" alt="Slide 3" />
+        </div>
+        <!-- Agrega más slides según sea necesario -->
+      </div>
+
+      <button class="slider-control-hero prev-hero" onclick="prevSlideHero()">
+        <img
+          class="iconHover"
+          src="./assets/img/icons/prev.svg"
+          width="22px"
+          alt=""
+        />
+      </button>
+      <button class="slider-control-hero next-hero" onclick="nextSlideHero()">
+        <img
+          class="iconHover"
+          src="./assets/img/icons/next.svg"
+          width="22px"
+          alt=""
+        />
+      </button>
+    </div> 
+
+    <section id="acercaDiElectronics">
+      <div class="card">
+        <div id="acercaContainerWidth">
+          <h3>Todo lo que buscas en un solo lugar</h3>
+          <h2>Iphones Nuevos <br> y seminuevos</h2>
+          <button>Ver mas</button>
+        </div>
+      </div>
+      <div class="card">
+        <div id="acercaContainerWidth">
+          <h3>Todo lo que buscas en un solo lugar</h3>
+          <h2>Iphones Nuevos <br> y seminuevos</h2>
+          <button>Ver mas</button>
+        </div>
+      </div>
+      <div class="card">
+        <div id="acercaContainerWidth">
+          <h3>Todo lo que buscas en un solo lugar</h3>
+          <h2>Iphones Nuevos <br> y seminuevos</h2>
+          <button>Ver mas</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="scroll-container">
+          <div class="container">
+            <div data-text="Samsung" style="--r:-15;" class="glass">
+              <a href="#">
+                <img src="./assets/img/productos/logosMarca/samsungLogo.svg" width="150px" alt="Samsung">
+              </a>
+            </div>
+            <div data-text="Apple" style="--r:5;" class="glass">
+              <a href="#">
+                <img src="./assets/img/productos/logosMarca/apple.svg" width="150px" alt="Apple">
+              </a>
+            </div>
+            <div data-text="Xiaomi" style="--r:25;" class="glass">
+              <a href="#">
+                <img src="./assets/img/productos/logosMarca/xiaomiLogo.svg" width="150px" alt="Xiaomi">
+              </a>
+            </div>
           </div>
-          <div class="slide-hero">
-            <img src="./assets/img/hero/hero-watch.png" alt="Slide 2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="dots-container">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+
+
+    <section id="nuevosLanzamientosSlider">
+      <div class="slider-container-new">
+        <div class="slider-content-new" id="slider-new">
+          <div class="slide-new">
+            <img
+              src="./assets/img/hero/hero-iphone-15.png"
+              alt="Slide 1"
+            />
           </div>
-          <div class="slide-hero">
-            <img src="./assets/img/hero/hero-iphone-15-white.png" alt="Slide 3" />
+          <div class="slide-new">
+            <img
+            src="./assets/img/hero/hero-iphone-15.png"
+              alt="Slide 2"
+            />
+          </div>
+          <div class="slide-new">
+            <img
+              src="./assets/img/hero/hero-iphone-15.png"
+              alt="Slide 3"
+            />
+          </div>
+          <div class="slide-new">
+            <img
+              src="./assets/img/hero/hero-iphone-15.png"
+              alt="Slide 4"
+            />
+          </div>
+          <div class="slide-new">
+            <img
+              src="./assets/img/hero/hero-iphone-15.png"
+              alt="Slide 5"
+            />
           </div>
           <!-- Agrega más slides según sea necesario -->
         </div>
 
-        <button class="slider-control-hero prev-hero" onclick="prevSlideHero()">
-          <img
-            class="iconHover"
-            src="./assets/img/icons/prev.svg"
-            width="22px"
-            alt=""
-          />
-        </button>
-        <button class="slider-control-hero next-hero" onclick="nextSlideHero()">
-          <img
-            class="iconHover"
-            src="./assets/img/icons/next.svg"
-            width="22px"
-            alt=""
-          />
-        </button>
-      </div> 
+        <div class="slider-controls-new" id="controls-new"></div>
+      </div>
+    </section>
 
-      <section id="acercaDiElectronics">
-        <div class="card">
-          <div id="acercaContainerWidth">
-            <h3>Todo lo que buscas en un solo lugar</h3>
-            <h2>Iphones Nuevos <br> y seminuevos</h2>
-            <button>Ver mas</button>
-          </div>
-        </div>
-        <div class="card">
-          <div id="acercaContainerWidth">
-            <h3>Todo lo que buscas en un solo lugar</h3>
-            <h2>Iphones Nuevos <br> y seminuevos</h2>
-            <button>Ver mas</button>
-          </div>
-        </div>
-        <div class="card">
-          <div id="acercaContainerWidth">
-            <h3>Todo lo que buscas en un solo lugar</h3>
-            <h2>Iphones Nuevos <br> y seminuevos</h2>
-            <button>Ver mas</button>
-          </div>
-        </div>
-      </section>
+    <section id="avisos">
+      <div id="avisosContainer">
+        <h3>
+          ¡Ahora podes abonar en 3 cuotas sin interés con visa, master, amex y
+          cabal a través de mercado pago!
+        </h3>
+      </div>
+    </section>
 
-      <div class="outer-container">
-        <div class="inner-container">
-          <div class="scroll-container">
-            <div class="container">
-              <div data-text="Samsung" style="--r:-15;" class="glass">
-                <a href="#">
-                  <img src="./assets/img/productos/logosMarca/samsungLogo.svg" width="150px" alt="Samsung">
-                </a>
-              </div>
-              <div data-text="Apple" style="--r:5;" class="glass">
-                <a href="#">
-                  <img src="./assets/img/productos/logosMarca/apple.svg" width="150px" alt="Apple">
-                </a>
-              </div>
-              <div data-text="Xiaomi" style="--r:25;" class="glass">
-                <a href="#">
-                  <img src="./assets/img/productos/logosMarca/xiaomiLogo.svg" width="150px" alt="Xiaomi">
-                </a>
-              </div>
-            </div>
-          </div>
+    <section id="nuestrosFavoritos">
+      <h2>Nuestro Favoritos</h2>
+      <div class="nuestrosFavoritosContainer">
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./assets/img/productos/apple/iphone15-pro-stock.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>Iphone 15 Pro Negro</h4>
+          </a>
+        </div>
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./assets/img/productos/apple/airpod-pro.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>Airpods Pro 2da Gen</h4>
+          </a>
+        </div>
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./assets/img/productos/apple/whatch.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>SmartWatch S9</h4>
+          </a>
+        </div>
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./assets/img/productos/apple/ipad-pencil.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>Ipad Pro y Apple Pencil</h4>
+          </a>
+        </div>
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./assets/img/productos/apple/macbook-air.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>MacBook Air</h4>
+          </a>
+        </div>
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./assets/img/productos/apple/iphone15-pro-max.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>Iphone 15 Pro Max Blanco</h4>
+          </a>
         </div>
       </div>
+    </section>
 
-      <div class="dots-container">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-
-
-      <section id="nuevosLanzamientosSlider">
-        <div class="slider-container-new">
-          <div class="slider-content-new" id="slider-new">
-            <div class="slide-new">
-              <img
-                src="./assets/img/hero/hero-iphone-15.png"
-                alt="Slide 1"
-              />
-            </div>
-            <div class="slide-new">
-              <img
-              src="./assets/img/hero/hero-iphone-15.png"
-                alt="Slide 2"
-              />
-            </div>
-            <div class="slide-new">
-              <img
-                src="./assets/img/hero/hero-iphone-15.png"
-                alt="Slide 3"
-              />
-            </div>
-            <div class="slide-new">
-              <img
-                src="./assets/img/hero/hero-iphone-15.png"
-                alt="Slide 4"
-              />
-            </div>
-            <div class="slide-new">
-              <img
-                src="./assets/img/hero/hero-iphone-15.png"
-                alt="Slide 5"
-              />
-            </div>
-            <!-- Agrega más slides según sea necesario -->
-          </div>
-
-          <div class="slider-controls-new" id="controls-new"></div>
-        </div>
-      </section>
-
-      <section id="avisos">
-        <div id="avisosContainer">
-          <h3>
-            ¡Ahora podes abonar en 3 cuotas sin interés con visa, master, amex y
-            cabal a través de mercado pago!
-          </h3>
-        </div>
-      </section>
-
-      <section id="nuestrosFavoritos">
-        <h2>Nuestro Favoritos</h2>
-        <div class="nuestrosFavoritosContainer">
-          <div class="nuestrosFavoritosItem">
-            <a href="./tienda.html">
-              <img
-                src="./assets/img/productos/apple/iphone15-pro-stock.png"
-                alt=""
-                class="nuestrosFavoritosImg"
-              />
-              <h3>$20.900,00</h3>
-              <h4>Iphone 15 Pro Negro</h4>
-            </a>
-          </div>
-          <div class="nuestrosFavoritosItem">
-            <a href="./tienda.html">
-              <img
-                src="./assets/img/productos/apple/airpod-pro.png"
-                alt=""
-                class="nuestrosFavoritosImg"
-              />
-              <h3>$20.900,00</h3>
-              <h4>Airpods Pro 2da Gen</h4>
-            </a>
-          </div>
-          <div class="nuestrosFavoritosItem">
-            <a href="./tienda.html">
-              <img
-                src="./assets/img/productos/apple/whatch.png"
-                alt=""
-                class="nuestrosFavoritosImg"
-              />
-              <h3>$20.900,00</h3>
-              <h4>SmartWatch S9</h4>
-            </a>
-          </div>
-          <div class="nuestrosFavoritosItem">
-            <a href="./tienda.html">
-              <img
-                src="./assets/img/productos/apple/ipad-pencil.png"
-                alt=""
-                class="nuestrosFavoritosImg"
-              />
-              <h3>$20.900,00</h3>
-              <h4>Ipad Pro y Apple Pencil</h4>
-            </a>
-          </div>
-          <div class="nuestrosFavoritosItem">
-            <a href="./tienda.html">
-              <img
-                src="./assets/img/productos/apple/macbook-air.png"
-                alt=""
-                class="nuestrosFavoritosImg"
-              />
-              <h3>$20.900,00</h3>
-              <h4>MacBook Air</h4>
-            </a>
-          </div>
-          <div class="nuestrosFavoritosItem">
-            <a href="./tienda.html">
-              <img
-                src="./assets/img/productos/apple/iphone15-pro-max.png"
-                alt=""
-                class="nuestrosFavoritosImg"
-              />
-              <h3>$20.900,00</h3>
-              <h4>Iphone 15 Pro Max Blanco</h4>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <div id="footerContainer">
-          <ul>
-            <li>
-              <div class="footer-left">
-                <nav>
-                  <ul>
-                    <li><a href="#lineasDestacadas">Inicio</a></li>
-                    <li><a href="#nuevosLanzamientosSlider">Tienda</a></li>
-                    <li><a href="#nuestrosFavoritos">News</a></li>
-                    <li><a href="#nuestrosFavoritos">OpenBox</a></li>
-                    <li><a href="#nuestrosFavoritos">Contacto</a></li>
-                  </ul>
-                </nav>
-                <div class="footer-midle-info">
-                  <h3>Ayuda</h3>
-                  <button class="botonAbrirModal">Medios de Pago</button>
-                  <dialog class="modalContainer">
-                    <div class="modal">
-                      <img
-                        src="./media/img/logo/logoBlancoTienda.png"
-                        class="modalLogo"
-                        alt=""
-                      />
-                    <button class="button botonCerrarModal">
+    <footer>
+      <div id="footerContainer">
+        <ul>
+          <li>
+            <div class="footer-left">
+              <nav>
+                <ul>
+                  <li><a href="#lineasDestacadas">Inicio</a></li>
+                  <li><a href="#nuevosLanzamientosSlider">Tienda</a></li>
+                  <li><a href="#nuestrosFavoritos">News</a></li>
+                  <li><a href="#nuestrosFavoritos">OpenBox</a></li>
+                  <li><a href="#nuestrosFavoritos">Contacto</a></li>
+                </ul>
+              </nav>
+              <div class="footer-midle-info">
+                <h3>Ayuda</h3>
+                <button class="botonAbrirModal">Medios de Pago</button>
+                <dialog class="modalContainer">
+                  <div class="modal">
+                    <img
+                      src="./media/img/logo/logoBlancoTienda.png"
+                      class="modalLogo"
+                      alt=""
+                    />
+                  <button class="button botonCerrarModal">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                    <h3>¿Cuáles son los medios de pago?:</h3>
+                    <p>
+                      Podés abonar a través de Mercado Pago con tarjeta de debito
+                      o credito en hasta 3 cuotas sin interés con Visa,
+                      Mastercard, American Express y Cabal emitidas por bancos.
+                    </p>
+                    <button class="button botonCerrarModal2">
                       <span class="X"></span>
                       <span class="Y"></span>
                       <div class="close">Close</div>
                     </button>
-                      <h3>¿Cuáles son los medios de pago?:</h3>
-                      <p>
-                        Podés abonar a través de Mercado Pago con tarjeta de debito
-                        o credito en hasta 3 cuotas sin interés con Visa,
-                        Mastercard, American Express y Cabal emitidas por bancos.
-                      </p>
-                      <button class="button botonCerrarModal2">
-                        <span class="X"></span>
-                        <span class="Y"></span>
-                        <div class="close">Close</div>
-                      </button>
-                    </div>
-                  </dialog>
-                </div>
+                  </div>
+                </dialog>
               </div>
-            </li>
-            <li>
-              <div class="footer-left-info">
-                <h3>Envios</h3>
-                <button class="botonAbrirModal">Realizan Envios?</button>
-                <dialog class="modalContainer">
-                  <div class="modal">
-                    <img
-                      src="./media/img/logo/logoBlancoTienda.png"
-                      class="modalLogo"
-                      alt=""
-                    />
+            </div>
+          </li>
+          <li>
+            <div class="footer-left-info">
+              <h3>Envios</h3>
+              <button class="botonAbrirModal">Realizan Envios?</button>
+              <dialog class="modalContainer">
+                <div class="modal">
+                  <img
+                    src="./media/img/logo/logoBlancoTienda.png"
+                    class="modalLogo"
+                    alt=""
+                  />
 
-                    <button class="button botonCerrarModal">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                    
-                    <h3>¿Realizan envíos?:</h3>
-                    <p>
-                      Si. Hacemos envíos a todo el país. El costo de envío depende
-                      del tamaño del producto y la provincia a la que quieras
-                      enviarlo, podés consultarlo en la publicación del producto,
-                      debajo del precio y los medios de pago, en la sección que
-                      dice “Calcular costos de envío”.
-                    </p>
-                    <button class="button botonCerrarModal2">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                  </div>
-                </dialog>
-                <button class="botonAbrirModal">Tiempos de entrega</button>
-                <dialog class="modalContainer">
-                  <div class="modal">
-                    <img
-                      src="./media/img/logo/logoBlancoTienda.png"
-                      class="modalLogo"
-                      alt=""
-                    />
-                    <button class="button botonCerrarModal">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                    <h3>¿Cuáles son los tiempos de entrega?:</h3>
-                    <p>
-                      Los tiempos de entrega dependerán de los productos que
-                      compres y del lugar de entrega. Cuando se realiza un envío
-                      dentro de CABA y GBA hasta 50 km, se entregará en su
-                      domicilio dentro de los 4 días hábiles posteriores al
-                      despacho. En el interior del país demorará puede ser de 4 a
-                      7 días hábiles. Salvo las provincias más alejadas, en las
-                      que puede demorar un poco más. El correo entregará en
-                      domicilio dentro de la franja horaria de lunes a viernes de
-                      9 a 17 hs.
-                    </p>
-                    <button class="button botonCerrarModal2">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                  </div>
-                </dialog>
-                <button class="botonAbrirModal">Info de Envios</button>
-                <dialog class="modalContainer">
-                  <div class="modal">
-                    <img
-                      src="./media/img/logo/logoBlancoTienda.png"
-                      class="modalLogo"
-                      alt=""
-                    />
-                    <button class="button botonCerrarModal">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                    <h3>¿Cuáles son los tiempos de entrega?:</h3>
-                    <p>
-                      Los tiempos de entrega dependerán de los productos que
-                      compres y del lugar de entrega. Cuando se realiza un envío
-                      dentro de CABA y GBA hasta 50 km, se entregará en su
-                      domicilio dentro de los 4 días hábiles posteriores al
-                      despacho. En el interior del país demorará puede ser de 4 a
-                      7 días hábiles. Salvo las provincias más alejadas, en las
-                      que puede demorar un poco más. El correo entregará en
-                      domicilio dentro de la franja horaria de lunes a viernes de
-                      9 a 17 hs.
-                    </p>
-                    <button class="button botonCerrarModal2">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                  </div>
-                </dialog>
-                <h3>Envios</h3>
-                <button class="botonAbrirModal">Realizan Envios?</button>
-                <dialog class="modalContainer">
-                  <div class="modal">
-                    <img
-                      src="./media/img/logo/logoBlancoTienda.png"
-                      class="modalLogo"
-                      alt=""
-                    />
-                    <button class="button botonCerrarModal">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
+                  <button class="button botonCerrarModal">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
                   
-                    <h3>¿Realizan envíos?:</h3>
-                    <p>
-                      Si. Hacemos envíos a todo el país. El costo de envío depende
-                      del tamaño del producto y la provincia a la que quieras
-                      enviarlo, podés consultarlo en la publicación del producto,
-                      debajo del precio y los medios de pago, en la sección que
-                      dice “Calcular costos de envío”.
-                    </p>
-                    <button class="button botonCerrarModal2">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                  </div>
-                </dialog>
-                <button class="botonAbrirModal">Tiempos de entrega</button>
-                <dialog class="modalContainer">
-                  <div class="modal">
-                    <img
-                      src="./media/img/logo/logoBlancoTienda.png"
-                      class="modalLogo"
-                      alt=""
-                    />
-                    <button class="button botonCerrarModal">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                    <h3>¿Cuáles son los tiempos de entrega?:</h3>
-                    <p>
-                      Los tiempos de entrega dependerán de los productos que
-                      compres y del lugar de entrega. Cuando se realiza un envío
-                      dentro de CABA y GBA hasta 50 km, se entregará en su
-                      domicilio dentro de los 4 días hábiles posteriores al
-                      despacho. En el interior del país demorará puede ser de 4 a
-                      7 días hábiles. Salvo las provincias más alejadas, en las
-                      que puede demorar un poco más. El correo entregará en
-                      domicilio dentro de la franja horaria de lunes a viernes de
-                      9 a 17 hs.
-                    </p>
-                    <button class="button botonCerrarModal2">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                  </div>
-                </dialog>
-                <button class="botonAbrirModal">Info de Envios</button>
-                <dialog class="modalContainer">
-                  <div class="modal">
-                    <img
-                      src="./media/img/logo/logoBlancoTienda.png"
-                      class="modalLogo"
-                      alt=""
-                    />
-                    <button class="button botonCerrarModal">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                    <h3>¿Cuáles son los tiempos de entrega?:</h3>
-                    <p>
-                      Los tiempos de entrega dependerán de los productos que
-                      compres y del lugar de entrega. Cuando se realiza un envío
-                      dentro de CABA y GBA hasta 50 km, se entregará en su
-                      domicilio dentro de los 4 días hábiles posteriores al
-                      despacho. En el interior del país demorará puede ser de 4 a
-                      7 días hábiles. Salvo las provincias más alejadas, en las
-                      que puede demorar un poco más. El correo entregará en
-                      domicilio dentro de la franja horaria de lunes a viernes de
-                      9 a 17 hs.
-                    </p>
-                    <button class="button botonCerrarModal2">
-                      <span class="X"></span>
-                      <span class="Y"></span>
-                      <div class="close">Close</div>
-                    </button>
-                  </div>
-                </dialog>
+                  <h3>¿Realizan envíos?:</h3>
+                  <p>
+                    Si. Hacemos envíos a todo el país. El costo de envío depende
+                    del tamaño del producto y la provincia a la que quieras
+                    enviarlo, podés consultarlo en la publicación del producto,
+                    debajo del precio y los medios de pago, en la sección que
+                    dice “Calcular costos de envío”.
+                  </p>
+                  <button class="button botonCerrarModal2">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                </div>
+              </dialog>
+              <button class="botonAbrirModal">Tiempos de entrega</button>
+              <dialog class="modalContainer">
+                <div class="modal">
+                  <img
+                    src="./media/img/logo/logoBlancoTienda.png"
+                    class="modalLogo"
+                    alt=""
+                  />
+                  <button class="button botonCerrarModal">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                  <h3>¿Cuáles son los tiempos de entrega?:</h3>
+                  <p>
+                    Los tiempos de entrega dependerán de los productos que
+                    compres y del lugar de entrega. Cuando se realiza un envío
+                    dentro de CABA y GBA hasta 50 km, se entregará en su
+                    domicilio dentro de los 4 días hábiles posteriores al
+                    despacho. En el interior del país demorará puede ser de 4 a
+                    7 días hábiles. Salvo las provincias más alejadas, en las
+                    que puede demorar un poco más. El correo entregará en
+                    domicilio dentro de la franja horaria de lunes a viernes de
+                    9 a 17 hs.
+                  </p>
+                  <button class="button botonCerrarModal2">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                </div>
+              </dialog>
+              <button class="botonAbrirModal">Info de Envios</button>
+              <dialog class="modalContainer">
+                <div class="modal">
+                  <img
+                    src="./media/img/logo/logoBlancoTienda.png"
+                    class="modalLogo"
+                    alt=""
+                  />
+                  <button class="button botonCerrarModal">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                  <h3>¿Cuáles son los tiempos de entrega?:</h3>
+                  <p>
+                    Los tiempos de entrega dependerán de los productos que
+                    compres y del lugar de entrega. Cuando se realiza un envío
+                    dentro de CABA y GBA hasta 50 km, se entregará en su
+                    domicilio dentro de los 4 días hábiles posteriores al
+                    despacho. En el interior del país demorará puede ser de 4 a
+                    7 días hábiles. Salvo las provincias más alejadas, en las
+                    que puede demorar un poco más. El correo entregará en
+                    domicilio dentro de la franja horaria de lunes a viernes de
+                    9 a 17 hs.
+                  </p>
+                  <button class="button botonCerrarModal2">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                </div>
+              </dialog>
+              <h3>Envios</h3>
+              <button class="botonAbrirModal">Realizan Envios?</button>
+              <dialog class="modalContainer">
+                <div class="modal">
+                  <img
+                    src="./media/img/logo/logoBlancoTienda.png"
+                    class="modalLogo"
+                    alt=""
+                  />
+                  <button class="button botonCerrarModal">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
                 
-              </div>
-            </li>
-          </ul>
-          <div class="footer-right">
-            <div class="social-media">
-              <div class="social-icons">
-                <h3>Redes Sociales</h3>
-                <a href="#"
-                  ><img src="./assets/img/icons/facebook.svg" alt="Facebook"
-                /></a>
-                <a href="#"
-                  ><img src="./assets/img/icons/instagram.svg" alt="Instagram"
-                /></a>
-              </div>
+                  <h3>¿Realizan envíos?:</h3>
+                  <p>
+                    Si. Hacemos envíos a todo el país. El costo de envío depende
+                    del tamaño del producto y la provincia a la que quieras
+                    enviarlo, podés consultarlo en la publicación del producto,
+                    debajo del precio y los medios de pago, en la sección que
+                    dice “Calcular costos de envío”.
+                  </p>
+                  <button class="button botonCerrarModal2">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                </div>
+              </dialog>
+              <button class="botonAbrirModal">Tiempos de entrega</button>
+              <dialog class="modalContainer">
+                <div class="modal">
+                  <img
+                    src="./media/img/logo/logoBlancoTienda.png"
+                    class="modalLogo"
+                    alt=""
+                  />
+                  <button class="button botonCerrarModal">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                  <h3>¿Cuáles son los tiempos de entrega?:</h3>
+                  <p>
+                    Los tiempos de entrega dependerán de los productos que
+                    compres y del lugar de entrega. Cuando se realiza un envío
+                    dentro de CABA y GBA hasta 50 km, se entregará en su
+                    domicilio dentro de los 4 días hábiles posteriores al
+                    despacho. En el interior del país demorará puede ser de 4 a
+                    7 días hábiles. Salvo las provincias más alejadas, en las
+                    que puede demorar un poco más. El correo entregará en
+                    domicilio dentro de la franja horaria de lunes a viernes de
+                    9 a 17 hs.
+                  </p>
+                  <button class="button botonCerrarModal2">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                </div>
+              </dialog>
+              <button class="botonAbrirModal">Info de Envios</button>
+              <dialog class="modalContainer">
+                <div class="modal">
+                  <img
+                    src="./media/img/logo/logoBlancoTienda.png"
+                    class="modalLogo"
+                    alt=""
+                  />
+                  <button class="button botonCerrarModal">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                  <h3>¿Cuáles son los tiempos de entrega?:</h3>
+                  <p>
+                    Los tiempos de entrega dependerán de los productos que
+                    compres y del lugar de entrega. Cuando se realiza un envío
+                    dentro de CABA y GBA hasta 50 km, se entregará en su
+                    domicilio dentro de los 4 días hábiles posteriores al
+                    despacho. En el interior del país demorará puede ser de 4 a
+                    7 días hábiles. Salvo las provincias más alejadas, en las
+                    que puede demorar un poco más. El correo entregará en
+                    domicilio dentro de la franja horaria de lunes a viernes de
+                    9 a 17 hs.
+                  </p>
+                  <button class="button botonCerrarModal2">
+                    <span class="X"></span>
+                    <span class="Y"></span>
+                    <div class="close">Close</div>
+                  </button>
+                </div>
+              </dialog>
+              
             </div>
-            <div class="payment">
-              <div class="payment-icons">
-                <h3>Metodos de pago</h3>
-                <a href="#"
-                  ><img src="./assets/img/icons/american.svg" alt="american"
-                /></a>
-                <a href="#"><img src="./assets/img/icons/visa.svg" alt="visa" /></a>
-                <a href="#"
-                  ><img src="./assets/img/icons/mastercard.svg" alt="mastercad"
-                /></a>
-              </div>
-            </div>
-            <div class="footer-info infoDesktop">
-              <p>Dirección: 123 Calle Principal, Ciudad</p>
-              <p>Teléfono: 555-123-4567</p>
-              <p>Email: info@example.com</p>
+          </li>
+        </ul>
+        <div class="footer-right">
+          <div class="social-media">
+            <div class="social-icons">
+              <h3>Redes Sociales</h3>
+              <a href="#"
+                ><img src="./assets/img/icons/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="./assets/img/icons/instagram.svg" alt="Instagram"
+              /></a>
             </div>
           </div>
-        </div>
-        <div class="footer-info infoMobile">
-          <p>Dirección: 123 Calle Principal, Ciudad</p>
-          <p>Teléfono: 555-123-4567</p>
-          <p>Email: info@example.com</p>
-        </div>
-      </footer>
-
-      <div id="footerLogo">
-        <a href="./index.html"
-          ><img src="./media/img/logo/logoBlancoTienda.png" alt=""
-        /></a>
-      </div>
-
-      <div id="novedadesCallToAction">
-        <button id="cerrarNovedades">
-          <img
-            src="./media/icons/close.svg"
-            id="closeMsg"
-            width="10px"
-            alt=""
-          />
-        </button>
-        <h3 class="novedadesTitulo">Suscríbete!</h3>
-        <div id="novedadesForm" class="novedadesContainer">
-          <h4 class="novedadesInfo">
-            Recibí descuentos y novedades de nuevos productos!
-          </h4>
-          <form action="" class="novedadesForm">
-            <input
-              id="email"
-              type="email"
-              placeholder="Email: "
-              autocomplete="off"
-            />
-            <input
-              id="objetoPreferido"
-              type="text"
-              placeholder="Produto fav: "
-              autocomplete="off"
-              maxlength="25"
-            />
-            <input id="enviar" type="submit" />
-          </form>
+          <div class="payment">
+            <div class="payment-icons">
+              <h3>Metodos de pago</h3>
+              <a href="#"
+                ><img src="./assets/img/icons/american.svg" alt="american"
+              /></a>
+              <a href="#"><img src="./assets/img/icons/visa.svg" alt="visa" /></a>
+              <a href="#"
+                ><img src="./assets/img/icons/mastercard.svg" alt="mastercad"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-info infoDesktop">
+            <p>Dirección: 123 Calle Principal, Ciudad</p>
+            <p>Teléfono: 555-123-4567</p>
+            <p>Email: info@example.com</p>
+          </div>
         </div>
       </div>
+      <div class="footer-info infoMobile">
+        <p>Dirección: 123 Calle Principal, Ciudad</p>
+        <p>Teléfono: 555-123-4567</p>
+        <p>Email: info@example.com</p>
+      </div>
+    </footer>
+
+    <div id="footerLogo">
+      <a href="./index.html"
+        ><img src="./media/img/logo/logoBlancoTienda.png" alt=""
+      /></a>
     </div>
 
     <script src="./assets/scripts/nav.js"></script>
