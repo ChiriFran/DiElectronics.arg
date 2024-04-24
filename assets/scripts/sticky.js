@@ -1,7 +1,6 @@
 function handleScroll() {
   const isSticky = window.scrollY > 200;
   applyStickyStyles(isSticky);
-  handleStickyActions(isSticky);
 }
 
 function applyStickyStyles(isSticky) {
