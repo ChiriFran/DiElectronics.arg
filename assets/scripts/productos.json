@@ -5,7 +5,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Celulares",
-            "id": "celulares"
+            "id": "c-1"
         },
         "precio": 500
     },
@@ -25,7 +25,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Celulares",
-            "id": "celulares"
+            "id": "c-2"
         },
         "precio": 700
     },
@@ -45,7 +45,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Celulares",
-            "id": "celulares"
+            "id": "c-3"
         },
         "precio": 1200
     },
@@ -55,7 +55,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Auriculares",
-            "id": "auriculares"
+            "id": "a-1"
         },
         "precio": 200
     },
@@ -65,7 +65,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Auriculares",
-            "id": "auriculares"
+            "id": "a-2"
         },
         "precio": 300
     },
@@ -75,7 +75,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Auriculares",
-            "id": "auriculares"
+            "id": "a-3"
         },
         "precio": 400
     },
@@ -85,7 +85,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Auriculares",
-            "id": "auriculares"
+            "id": "a-4"
         },
         "precio": 500
     },
@@ -95,7 +95,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Computadoras",
-            "id": "computadoras"
+            "id": "p-1"
         },
         "precio": 1500
     },
@@ -105,7 +105,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Computadoras",
-            "id": "computadoras"
+            "id": "p-2"
         },
         "precio": 1800
     },
@@ -115,7 +115,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Computadoras",
-            "id": "computadoras"
+            "id": "p-3"
         },
         "precio": 2000
     },
@@ -125,7 +125,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Relojes",
-            "id": "relojes"
+            "id": "r-1"
         },
         "precio": 150
     },
@@ -135,7 +135,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Relojes",
-            "id": "relojes"
+            "id": "r-2"
         },
         "precio": 200
     },
@@ -145,7 +145,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Relojes",
-            "id": "relojes"
+            "id": "r-3"
         },
         "precio": 350
     },
@@ -155,7 +155,7 @@
         "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Relojes",
-            "id": "relojes"
+            "id": "r-4"
         },
         "precio": 400
     }

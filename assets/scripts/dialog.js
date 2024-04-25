@@ -1,13 +1,14 @@
 // Seleccionar todos los elementos modales, botones de abrir y botones de cerrar por clase
 const modals = document.querySelectorAll(".modalContainer, .modalContainerNav");
-const botonesAbrirFooter = document.querySelectorAll(".botonAbrirModal");
-const botonesAbrirModalNav = document.querySelectorAll(".botonAbrirModalNav");
-const botonesCerrarModal = document.querySelectorAll(".botonCerrarModal");
+const botonesAbrir = document.querySelectorAll(
+  ".botonAbrirModal, .botonAbrirModalNav"
+);
+const botonesCerrar = document.querySelectorAll(".botonCerrarModal");
 
 // Iterar sobre cada botón de abrir modal y agregar el event listener correspondiente
-botonesAbrirModalNav.forEach((botonAbrir, index) => {
-  const modal = index < modals.length ? modals[index] : null; // Seleccionar el modal correspondiente al botón actual
+botonesAbrir.forEach((botonAbrir, index) => {
   botonAbrir.addEventListener("click", () => {
+    const modal = index < modals.length ? modals[index] : null; // Seleccionar el modal correspondiente al botón actual
     if (modal) {
       modal.showModal();
       document.body.style.overflow = "hidden";
@@ -16,38 +17,17 @@ botonesAbrirModalNav.forEach((botonAbrir, index) => {
 });
 
 // Iterar sobre cada botón de cerrar modal y agregar el event listener correspondiente
-botonesAbrirModalNav.forEach((botonCerrar) => {
+botonesCerrar.forEach((botonCerrar) => {
   botonCerrar.addEventListener("click", () => {
     const modal = botonCerrar.closest(".modalContainer, .modalContainerNav"); // Buscar el modal padre del botón de cerrar
-    modal.style.animation = "myAnim 0.5s forwards";
-    setTimeout(function () {
-      modal.close();
-      modal.style.animation = "";
-      document.body.style.overflow = "auto";
-    }, 500);
-  });
-});
-// Iterar sobre cada botón de abrir modal y agregar el event listener correspondiente
-botonesAbrirFooter.forEach((botonAbrir, index) => {
-  const modal = index < modals.length ? modals[index] : null; // Seleccionar el modal correspondiente al botón actual
-  botonAbrir.addEventListener("click", () => {
     if (modal) {
-      modal.showModal();
-      document.body.style.overflow = "hidden";
+      modal.style.animation = "myAnim 0.5s forwards";
+      setTimeout(function () {
+        modal.close();
+        modal.style.animation = "";
+        document.body.style.overflow = "auto";
+      }, 500);
     }
-  });
-});
-
-// Iterar sobre cada botón de cerrar modal y agregar el event listener correspondiente
-botonesAbrirFooter.forEach((botonCerrar) => {
-  botonCerrar.addEventListener("click", () => {
-    const modal = botonCerrar.closest(".modalContainer, .modalContainerNav"); // Buscar el modal padre del botón de cerrar
-    modal.style.animation = "myAnim 0.5s forwards";
-    setTimeout(function () {
-      modal.close();
-      modal.style.animation = "";
-      document.body.style.overflow = "auto";
-    }, 500);
   });
 });
 
@@ -69,4 +49,12 @@ modals.forEach((modal) => {
       }, 500);
     }
   });
+});
+
+// Añadir clase .modalNav a los modals de navegación y eliminar animaciones
+modals.forEach((modal) => {
+  if (modal.classList.contains("modalContainerNav")) {
+    modal.classList.add("modalNav");
+    modal.style.animation = "none"; // Eliminar animaciones
+  }
 });
