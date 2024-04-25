@@ -6,19 +6,9 @@ function handleScroll() {
 function applyStickyStyles(isSticky) {
   const nav = document.querySelector(".nav");
   const headerTitle = document.querySelector(".headerTitle");
-
-  const iconNavBarMobileLogo = document.getElementById("navBarMobileLogo");
-  const iconNavBarMobile = document.getElementById("navBarMobile");
+  const botonAbrirModalNav = document.querySelector(".botonAbrirModalNav");
 
   nav.classList.toggle("sticky", isSticky);
-  iconNavBarMobile.classList.toggle("mobileSticky", window.scrollY > 200);
-
-  const visibility = isSticky ? "visible" : "hidden";
-  const position = isSticky ? "relative" : "absolute";
-
-  iconNavBarMobileLogo.style.visibility = visibility;
-  iconNavBarMobileLogo.style.position = position;
-
 
   headerTitle.classList.toggle("headerSticky", isSticky);
 
@@ -26,6 +16,15 @@ function applyStickyStyles(isSticky) {
   underlineHovers.forEach((underlineHover) => {
     underlineHover.style.setProperty("--colorFont", isSticky ? "#fff" : "#000");
   });
+
+  // Cambiar dinámicamente los estilos del botón según el estado sticky
+  if (isSticky) {
+    botonAbrirModalNav.style.color = "#fff";
+    botonAbrirModalNav.style.backgroundColor = "#0e0700";
+  } else {
+    botonAbrirModalNav.style.color = "#0e0700"; // Restablecer a valor predeterminado
+    botonAbrirModalNav.style.backgroundColor = "#fff"; // Restablecer a valor predeterminado
+  }
 }
 
 window.addEventListener("scroll", handleScroll);

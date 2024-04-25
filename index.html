@@ -19,13 +19,19 @@
     />
 
     <!-- Font Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>dielectronics.arg - Home</title>
   </head>
@@ -54,31 +60,62 @@
 
       <ul class="navList">
         <li>
-          <a id="mueblesBtn" class="underlined-hover" href="./index.html">Inicio</a>
+          <a id="mueblesBtn" class="underlined-hover" href="./index.html"
+            >Inicio</a
+          >
         </li>
         <li>
-          <a id="mueblesBtn" class="underlined-hover" href="./tienda.html">Tienda</a>
+          <a id="mueblesBtn" class="underlined-hover" href="./tienda.html"
+            >Tienda</a
+          >
         </li>
         <li>
           <a id="mesasBtn" class="underlined-hover" href="#">Iphones New</a>
         </li>
         <li>
-          <a id="sillasBtn" class="underlined-hover" href="#">Iphones Openbox</a>
+          <a id="sillasBtn" class="underlined-hover" href="#"
+            >Iphones Openbox</a
+          >
         </li>
         <li>
-          <a id="sillasBtn" class="underlined-hover" href="#">Apple</a>
-        </li>
-        <li>
-          <a id="sillasBtn" class="underlined-hover" href="#">Samsung</a>
-        </li>
-        <li>
-          <a id="sillasBtn" class="underlined-hover" href="#">Xiaomi</a>
+          <button class="botonAbrirModalNav underlined-hover">
+            Nuestra Familia
+          </button>
         </li>
         <li>
           <a id="sillasBtn" class="underlined-hover" href="#">Contacto</a>
         </li>
       </ul>
     </nav>
+
+    <div class="nuestraFamilia">
+      <dialog class="modalContainerNav modalNav">
+        <div class="modal">
+          <img
+            src="./media/img/logo/logoBlancoTienda.png"
+            class="modalLogo"
+            alt=""
+          />
+          <button class="button botonCerrarModal">
+            <span class="X"></span>
+            <span class="Y"></span>
+            <div class="close">Close</div>
+          </button>
+          <h3 id="nuestraFamiliaTitle">Familia dielectronics.arg</h3>
+          <p id="nuestraFamiliaText">
+            En dielectronics.arg, consideramos a nuestro equipo como una
+            familia. Aquí no solo trabajamos juntos, sino que también nos
+            apoyamos, nos inspiramos y celebramos los éxitos juntos. ¡Únete a
+            nuestra familia y forma parte de algo especial!
+          </p>
+          <button class="button botonCerrarModal2">
+            <span class="X"></span>
+            <span class="Y"></span>
+            <div class="close">Close</div>
+          </button>
+        </div>
+      </dialog>
+    </div>
 
     <div class="slider-container-hero">
       <div class="slider-content-hero" id="slider-hero">
@@ -110,28 +147,52 @@
           alt=""
         />
       </button>
-    </div> 
+    </div>
 
     <section id="acercaDiElectronics">
       <div class="card">
         <div id="acercaContainerWidth">
           <h3>Todo lo que buscas en un solo lugar</h3>
-          <h2>Iphones Nuevos <br> y seminuevos</h2>
-          <button>Ver mas</button>
+          <h2>
+            Iphones Nuevos <br />
+            y seminuevos
+          </h2>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Ver mas</span>
+          </button>
         </div>
       </div>
       <div class="card">
         <div id="acercaContainerWidth">
           <h3>Todo lo que buscas en un solo lugar</h3>
-          <h2>Computadoras <br> y auriculares</h2>
-          <button>Ver mas</button>
+          <h2>
+            Computadoras <br />
+            y auriculares
+          </h2>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Ver mas</span>
+          </button>
         </div>
       </div>
       <div class="card">
         <div id="acercaContainerWidth">
           <h3>Todo lo que buscas en un solo lugar</h3>
-          <h2>Electrodomesticos<br> y mas</h2>
-          <button>Ver mas</button>
+          <h2>
+            Electrodomesticos<br />
+            y mas
+          </h2>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Ver mas</span>
+          </button>
         </div>
       </div>
     </section>
@@ -140,19 +201,31 @@
       <div class="inner-container">
         <div class="scroll-container">
           <div class="container">
-            <div data-text="Samsung" style="--r:-15;" class="glass">
+            <div data-text="Samsung" style="--r: -15" class="glass">
               <a href="#">
-                <img src="./assets/img/productos/logosMarca/samsungLogo.svg" width="150px" alt="Samsung">
+                <img
+                  src="./assets/img/productos/logosMarca/samsungLogo.svg"
+                  width="150px"
+                  alt="Samsung"
+                />
               </a>
             </div>
-            <div data-text="Apple" style="--r:5;" class="glass">
+            <div data-text="Apple" style="--r: 5" class="glass">
               <a href="#">
-                <img src="./assets/img/productos/logosMarca/apple.svg" width="150px" alt="Apple">
+                <img
+                  src="./assets/img/productos/logosMarca/apple.svg"
+                  width="150px"
+                  alt="Apple"
+                />
               </a>
             </div>
-            <div data-text="Xiaomi" style="--r:25;" class="glass">
+            <div data-text="Xiaomi" style="--r: 25" class="glass">
               <a href="#">
-                <img src="./assets/img/productos/logosMarca/xiaomiLogo.svg" width="150px" alt="Xiaomi">
+                <img
+                  src="./assets/img/productos/logosMarca/xiaomiLogo.svg"
+                  width="150px"
+                  alt="Xiaomi"
+                />
               </a>
             </div>
           </div>
@@ -166,39 +239,23 @@
       <div class="dot"></div>
     </div>
 
-
     <section id="nuevosLanzamientosSlider">
       <div class="slider-container-new">
         <div class="slider-content-new" id="slider-new">
           <div class="slide-new">
-            <img
-              src="./assets/img/hero/hero-iphone-15.png"
-              alt="Slide 1"
-            />
+            <img src="./assets/img/hero/hero-iphone-15.png" alt="Slide 1" />
           </div>
           <div class="slide-new">
-            <img
-            src="./assets/img/hero/hero-iphone-15.png"
-              alt="Slide 2"
-            />
+            <img src="./assets/img/hero/hero-iphone-15.png" alt="Slide 2" />
           </div>
           <div class="slide-new">
-            <img
-              src="./assets/img/hero/hero-iphone-15.png"
-              alt="Slide 3"
-            />
+            <img src="./assets/img/hero/hero-iphone-15.png" alt="Slide 3" />
           </div>
           <div class="slide-new">
-            <img
-              src="./assets/img/hero/hero-iphone-15.png"
-              alt="Slide 4"
-            />
+            <img src="./assets/img/hero/hero-iphone-15.png" alt="Slide 4" />
           </div>
           <div class="slide-new">
-            <img
-              src="./assets/img/hero/hero-iphone-15.png"
-              alt="Slide 5"
-            />
+            <img src="./assets/img/hero/hero-iphone-15.png" alt="Slide 5" />
           </div>
           <!-- Agrega más slides según sea necesario -->
         </div>
@@ -312,15 +369,15 @@
                       class="modalLogo"
                       alt=""
                     />
-                  <button class="button botonCerrarModal">
-                    <span class="X"></span>
-                    <span class="Y"></span>
-                    <div class="close">Close</div>
-                  </button>
+                    <button class="button botonCerrarModal">
+                      <span class="X"></span>
+                      <span class="Y"></span>
+                      <div class="close">Close</div>
+                    </button>
                     <h3>¿Cuáles son los medios de pago?:</h3>
                     <p>
-                      Podés abonar a través de Mercado Pago con tarjeta de debito
-                      o credito en hasta 3 cuotas sin interés con Visa,
+                      Podés abonar a través de Mercado Pago con tarjeta de
+                      debito o credito en hasta 3 cuotas sin interés con Visa,
                       Mastercard, American Express y Cabal emitidas por bancos.
                     </p>
                     <button class="button botonCerrarModal2">
@@ -350,7 +407,7 @@
                     <span class="Y"></span>
                     <div class="close">Close</div>
                   </button>
-                  
+
                   <h3>¿Realizan envíos?:</h3>
                   <p>
                     Si. Hacemos envíos a todo el país. El costo de envío depende
@@ -444,7 +501,7 @@
                     <span class="Y"></span>
                     <div class="close">Close</div>
                   </button>
-                
+
                   <h3>¿Realizan envíos?:</h3>
                   <p>
                     Si. Hacemos envíos a todo el país. El costo de envío depende
@@ -524,7 +581,6 @@
                   </button>
                 </div>
               </dialog>
-              
             </div>
           </li>
         </ul>
@@ -546,7 +602,9 @@
               <a href="#"
                 ><img src="./assets/img/icons/american.svg" alt="american"
               /></a>
-              <a href="#"><img src="./assets/img/icons/visa.svg" alt="visa" /></a>
+              <a href="#"
+                ><img src="./assets/img/icons/visa.svg" alt="visa"
+              /></a>
               <a href="#"
                 ><img src="./assets/img/icons/mastercard.svg" alt="mastercad"
               /></a>
