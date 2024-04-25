@@ -1,6 +1,6 @@
 let productos = [];
 let indiceInicio = 0; // Índice de inicio para mostrar los productos
-const productosPorPagina = 16;
+const productosPorPagina = 12;
 
 fetch("./assets/scripts/productos.json")
   .then((response) => response.json())
@@ -76,17 +76,6 @@ botonRetroceder.addEventListener("click", retrocederProductos);
 
 // Agregar botones al contenedor de controles
 contenedorControles.appendChild(botonRetroceder);
-
-// Agregar números de página
-for (let i = 0; i < Math.ceil(productos.length / productosPorPagina); i++) {
-  const numeroPagina = document.createElement("button");
-  numeroPagina.innerText = i + 1;
-  numeroPagina.addEventListener("click", () => {
-    indiceInicio = i * productosPorPagina;
-    cargarProductos();
-  });
-  contenedorControles.appendChild(numeroPagina);
-}
 
 contenedorControles.appendChild(botonAvanzar);
 
