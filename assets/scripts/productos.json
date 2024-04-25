@@ -2,7 +2,7 @@
     {
         "id": "celular-01",
         "titulo": "Iphone 10",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Celulares",
             "id": "celulares"
@@ -12,7 +12,7 @@
     {
         "id": "celular-02",
         "titulo": "Iphone 11",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Celulares",
             "id": "celulares"
@@ -22,7 +22,7 @@
     {
         "id": "celular-03",
         "titulo": "Iphone 12",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Celulares",
             "id": "celulares"
@@ -32,7 +32,7 @@
     {
         "id": "celular-04",
         "titulo": "Iphone 13",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Celulares",
             "id": "celulares"
@@ -42,7 +42,7 @@
     {
         "id": "celular-05",
         "titulo": "Iphone 14",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Celulares",
             "id": "celulares"
@@ -52,7 +52,7 @@
     {
         "id": "auriculares-01",
         "titulo": "AirPods Gen 1",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Auriculares",
             "id": "auriculares"
@@ -62,7 +62,7 @@
     {
         "id": "auriculares-02",
         "titulo": "AirPods Gen 2",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Auriculares",
             "id": "auriculares"
@@ -72,7 +72,7 @@
     {
         "id": "auriculares-03",
         "titulo": "AirPods Gen 3",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Auriculares",
             "id": "auriculares"
@@ -82,7 +82,7 @@
     {
         "id": "auriculares-04",
         "titulo": "AirPods Gen 3 Pro",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Auriculares",
             "id": "auriculares"
@@ -92,7 +92,7 @@
     {
         "id": "computadora-01",
         "titulo": "MacBook Air M1",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Computadoras",
             "id": "computadoras"
@@ -102,7 +102,7 @@
     {
         "id": "computadora-02",
         "titulo": "MacBook Air M2",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Computadoras",
             "id": "computadoras"
@@ -112,7 +112,7 @@
     {
         "id": "computadora-03",
         "titulo": "MacBook Pro",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Computadoras",
             "id": "computadoras"
@@ -122,7 +122,7 @@
     {
         "id": "reloj-01",
         "titulo": "Serie SE",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Relojes",
             "id": "relojes"
@@ -132,7 +132,7 @@
     {
         "id": "reloj-02",
         "titulo": "Ultra",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Relojes",
             "id": "relojes"
@@ -142,7 +142,7 @@
     {
         "id": "reloj-03",
         "titulo": "Serie 8",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Relojes",
             "id": "relojes"
@@ -152,7 +152,7 @@
     {
         "id": "reloj-04",
         "titulo": "Serie 9",
-        "imagen": "../img/productos/apple/celulares/01.jpg",
+        "imagen": "./assets/img/productos/apple/celulares/01.jpg",
         "categoria": {
             "nombre": "Relojes",
             "id": "relojes"
