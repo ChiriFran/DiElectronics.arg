@@ -7,25 +7,21 @@ fetch("assets/scripts/productos.json")
         cargarProductos(productos);
     })
 
-
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
-
+const inputBusqueda = document.querySelector("#input-busqueda");
 
 botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
 }))
 
-
 function cargarProductos(productosElegidos) {
-
     contenedorProductos.innerHTML = "";
 
     productosElegidos.forEach(producto => {
-
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
@@ -43,10 +39,8 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar();
 }
 
-
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
-
         botonesCategorias.forEach(boton => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");
 
@@ -60,6 +54,15 @@ botonesCategorias.forEach(boton => {
             cargarProductos(productos);
         }
 
+        if (e.currentTarget.id != "nuevos") {
+            const productoEstado = productos.find(producto => producto.categoria.estado === e.currentTarget.id);
+            tituloPrincipal.innerText = productoEstado.categoria.nombre;
+            const productosBoton = productos.filter(producto => producto.categoria.estado === e.currentTarget.id);
+            cargarProductos(productosBoton);
+        } else {
+            tituloPrincipal.innerText = "Todos los productos";
+            cargarProductos(productos);
+        }
     })
 });
 
@@ -83,7 +86,6 @@ if (productosEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
-
     Toastify({
         text: "Producto agregado",
         duration: 3000,
@@ -124,3 +126,13 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
+
+inputBusqueda.addEventListener("input", () => {
+    const textoBusqueda = inputBusqueda.value.trim().toLowerCase();
+    const productosFiltrados = productos.filter(producto => {
+        const titulo = producto.titulo.toLowerCase();
+        const categoria = producto.categoria.nombre.toLowerCase();
+        return titulo.includes(textoBusqueda) || categoria.includes(textoBusqueda);
+    });
+    cargarProductos(productosFiltrados);
+});

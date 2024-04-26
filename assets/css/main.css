@@ -62,6 +62,23 @@ aside {
   font-family: sans-serif;
 }
 
+#busqueda{
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 1rem;
+}
+
+#input-busqueda{
+  border: none;
+  padding: 0.5rem 2rem;
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  margin-left: 0.5rem;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -77,7 +94,7 @@ aside {
   align-items: center;
   gap: 1rem;
   font-weight: 600;
-  padding: 1rem;
+  padding: 1rem 0;
   font-size: 0.85rem;
   width: 100%;
 }
