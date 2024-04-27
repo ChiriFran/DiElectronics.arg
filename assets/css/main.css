@@ -68,15 +68,22 @@ aside {
   flex-flow: row;
   align-items: center;
   justify-content: start;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  font-size: 0.8rem;
 }
 
 #input-busqueda{
   border: none;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0.5rem;
   background-color: var(--clr-main);
   color: var(--clr-white);
   margin-left: 0.5rem;
+}
+
+#lupaImg{
+  width: 20px;
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
 .menu {

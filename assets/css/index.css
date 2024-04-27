@@ -99,7 +99,7 @@ header {
 .sticky {
   position: sticky;
   top: 3rem;
-  padding: 2rem 0 1.5rem 0;
+  padding: 0.5rem 0 1.5rem 0;
   background: var(--colorFont);
   color: var(--colorBase);
   transition: 0.8s;
@@ -263,7 +263,6 @@ header {
     transform: translateY(0);
   }
 }
-
 
 #nuestraFamiliaTitle {
   font-size: clamp(1.2rem, 2vw, 3rem);
@@ -868,13 +867,13 @@ dialog::backdrop {
 }
 
 @keyframes myAnim {
-	0% {
-		transform: scale(1);
-	}
+  0% {
+    transform: scale(1);
+  }
 
-	100% {
-		transform: scale(0);
-	}
+  100% {
+    transform: scale(0);
+  }
 }
 
 .botonAbrirModal {
@@ -1015,9 +1014,6 @@ dialog::backdrop {
 }
 
 @media (min-width: 1001px) and (max-width: 1400px) {
-  .slider-container-hero {
-    height: 50vh;
-  }
   .lineasDestacadasContainer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
