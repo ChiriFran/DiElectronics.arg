@@ -1046,7 +1046,6 @@ dialog::backdrop {
   .mobileSticky {
     position: sticky;
     top: 0;
-    padding: 2rem 2rem 1rem 2rem;
     background: var(--colorFont);
     color: var(--colorBase);
     z-index: 10000;
@@ -1077,6 +1076,10 @@ dialog::backdrop {
     text-decoration: none;
   }
 
+  #navBarMobile a img {
+    width: 28px;
+  }
+
   #stickyNavLinksContainer {
     display: flex;
     width: 100%;
@@ -1090,6 +1093,9 @@ dialog::backdrop {
     position: absolute;
     color: var(--colorBase);
     text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
   }
 
   body.scroll-lock {
