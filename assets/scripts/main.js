@@ -25,7 +25,10 @@ function cargarProductos(productosElegidos) {
 
   if (productosElegidos.length === 0) {
     // Mostrar mensaje de que no hay productos disponibles
-    contenedorProductos.innerHTML = "<p>No hay productos disponibles.</p>";
+    contenedorProductos.innerHTML =
+      "<p>No hay productos disponibles con nombre o categoria '" +
+      document.getElementById("input-busqueda").value +
+      "'.</p>";
   } else {
     productosElegidos.forEach((producto) => {
       const div = document.createElement("div");

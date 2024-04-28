@@ -178,7 +178,7 @@ main {
   padding: 0.5rem 0.5rem;
   background-color: var(--clr-white);
   color: var(--clr-main);
-  margin-left: 0.5rem;
+  margin: 0 0.5rem;
 }
 
 #lupaImg {
@@ -622,6 +622,21 @@ main {
     margin: 1rem;
     margin-top: 0;
     padding: 2rem;
+  }
+
+  #headerMain{
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .titulo-principal {
+    margin-bottom: 1rem;
+  }
+
+  #busqueda {
+    margin: 1rem 0;
+    margin-bottom: 3rem;
   }
 
   .contenedor-productos {
