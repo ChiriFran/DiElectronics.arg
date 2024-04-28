@@ -147,7 +147,7 @@ header {
   color: var(--colorFont);
 }
 
-#navBarMobileLogo {
+#navBarMobileTitle {
   visibility: hidden;
   position: absolute;
   cursor: pointer;
@@ -1052,13 +1052,44 @@ dialog::backdrop {
     z-index: 10000;
     transition: 0.4s;
     display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    animation: myAnimNavStickyEntrada 0.7s ease 0s 1 normal forwards;
+  }
+
+  .navBarMobileStickyAnimationSalida {
+    animation: myAnimNavStickySalida 0.7s ease 0s 1 normal forwards;
+  }
+
+  @keyframes myAnimNavStickySalida {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(-200%);
+    }
+  }
+
+  #navBarMobile a {
+    text-decoration: none;
+  }
+
+  #stickyNavLinksContainer {
+    display: flex;
+    width: 100%;
     flex-flow: row;
+    align-items: center;
     justify-content: space-around;
   }
 
-  #navBarMobileLogo {
+  #navBarMobileTitle {
     visibility: hidden;
     position: absolute;
+    color: var(--colorBase);
+    text-decoration: none;
   }
 
   body.scroll-lock {

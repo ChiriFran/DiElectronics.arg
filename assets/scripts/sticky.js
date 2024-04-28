@@ -7,10 +7,20 @@ function applyStickyStyles(isSticky) {
   const nav = document.querySelector(".nav");
   const headerTitle = document.querySelector(".headerTitle");
   const botonAbrirModalNav = document.querySelector(".botonAbrirModalNav");
+  const iconNavBarMobile = document.getElementById("navBarMobile");
+  const iconNavBarMobileTitle = document.getElementById("navBarMobileTitle");
 
   nav.classList.toggle("sticky", isSticky);
 
   headerTitle.classList.toggle("headerSticky", isSticky);
+
+  iconNavBarMobile.classList.toggle("mobileSticky", isSticky);
+
+  const visibility = isSticky ? "visible" : "hidden";
+  const position = isSticky ? "relative" : "absolute";
+
+  iconNavBarMobileTitle.style.visibility = visibility;
+  iconNavBarMobileTitle.style.position = position;
 
   const underlineHovers = document.querySelectorAll(".underlined-hover");
   underlineHovers.forEach((underlineHover) => {
