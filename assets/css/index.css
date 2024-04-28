@@ -153,6 +153,10 @@ header {
   cursor: pointer;
 }
 
+#stickyNavLinksContainer a{
+  text-decoration: none;
+}
+
 .navList {
   display: flex;
   align-items: center;

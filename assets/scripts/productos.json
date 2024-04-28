@@ -7,7 +7,8 @@
             "nombre": "Celulares",
             "id": "celulares"
         },
-        "precio": 500
+        "precio": 500,
+        "estado" : "topSale"
     },
     {
         "id": "celular-02",
@@ -17,7 +18,8 @@
             "nombre": "Celulares",
             "id": "celulares"
         },
-        "precio": 600
+        "precio": 600,
+        "estado" : "topSale"
     },
     {
         "id": "celular-03",
@@ -77,7 +79,8 @@
             "nombre": "Auriculares",
             "id": "auriculares"
         },
-        "precio": 400
+        "precio": 400,
+        "estado" : "topSale"
     },
     {
         "id": "computadora-01",
@@ -97,7 +100,8 @@
             "nombre": "Computadoras",
             "id": "computadoras"
         },
-        "precio": 1800
+        "precio": 1800,
+        "estado" : "topSale"
     },
     {
         "id": "computadora-03",
@@ -147,6 +151,7 @@
             "nombre": "Relojes",
             "id": "relojes"
         },
-        "precio": 400
+        "precio": 400,
+        "estado" : "topSale"
     }
 ]
