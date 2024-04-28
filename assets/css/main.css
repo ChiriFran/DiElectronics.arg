@@ -60,30 +60,7 @@ aside {
   font-weight: 900;
   font-size: 1.3rem;
   font-family: sans-serif;
-}
-
-#busqueda {
-  display: flex;
-  width: 100%;
-  flex-flow: row;
-  align-items: center;
-  justify-content: start;
-  margin: 1rem 0;
-  font-size: 0.8rem;
-}
-
-#input-busqueda {
-  border: none;
-  padding: 0.5rem 0.5rem;
-  background-color: var(--clr-main);
-  color: var(--clr-white);
-  margin-left: 0.5rem;
-}
-
-#lupaImg {
-  width: 20px;
-  cursor: pointer;
-  margin-right: 1rem;
+  margin-bottom: 2rem;
 }
 
 .menu {
@@ -177,6 +154,37 @@ main {
   margin-left: 0;
   border-radius: 2rem;
   padding: 3rem;
+}
+
+#headerMain{
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#busqueda {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: start;
+  margin: 1rem 2rem;
+  font-size: 1rem;
+}
+
+#input-busqueda {
+  border: none;
+  padding: 0.5rem 0.5rem;
+  background-color: var(--clr-white);
+  color: var(--clr-main);
+  margin-left: 0.5rem;
+}
+
+#lupaImg {
+  width: 20px;
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
 .titulo-principal {

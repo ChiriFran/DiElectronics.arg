@@ -23,23 +23,30 @@ botonesCategorias.forEach((boton) =>
 function cargarProductos(productosElegidos) {
   contenedorProductos.innerHTML = "";
 
-  productosElegidos.forEach((producto) => {
-    const div = document.createElement("div");
-    div.classList.add("producto");
-    div.innerHTML = `
-            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
-            <div class="producto-detalles">
-                <h3 class="producto-titulo">${producto.titulo}</h3>
-                <p class="producto-precio">$${producto.precio} USD</p>
-                <button class="btn-96 producto-agregar" id="${producto.id}"><span>Agregar</span></button>
-            </div>
-        `;
+  if (productosElegidos.length === 0) {
+    // Mostrar mensaje de que no hay productos disponibles
+    contenedorProductos.innerHTML = "<p>No hay productos disponibles.</p>";
+  } else {
+    productosElegidos.forEach((producto) => {
+      const div = document.createElement("div");
+      div.classList.add("producto");
+      div.innerHTML = `
+                <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+                <div class="producto-detalles">
+                    <h3 class="producto-titulo">${producto.titulo}</h3>
+                    <p class="producto-precio">$${producto.precio} USD</p>
+                    <button class="btn-96 producto-agregar" id="${producto.id}"><span>Agregar</span></button>
+                </div>
+            `;
 
-    contenedorProductos.append(div);
-  });
+      contenedorProductos.append(div);
+    });
+  }
 
+  // Actualizar botones de agregar
   actualizarBotonesAgregar();
 }
+
 // Agregar evento de clic a todos los botones de categoría y el nuevo botón topSale
 [...botonesCategorias, document.querySelector("#topSale")].forEach((boton) => {
   boton.addEventListener("click", (e) => {

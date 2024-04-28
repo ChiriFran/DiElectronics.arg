@@ -32,17 +32,6 @@
           <h1 class="logo">dielectronics.arg</h1>
         </header>
         <nav>
-          <section id="busqueda">
-            Buscar:
-            <input
-              type="text"
-              id="input-busqueda"
-              placeholder="Ej: celulares, auriculares..."
-              autocomplete="off"
-            />
-            <img src="assets/img/icons/lupaBlanca.svg" id="lupaImg" alt="" />
-          </section>
-
           <ul class="menu">
             <li>
               <a href="./index.html" class="boton-menu boton-categoria"
@@ -51,7 +40,8 @@
             </li>
             <li>
               <button id="topSale" class="boton-menu boton-categoria">
-                <img src="assets/img/icons/descuento.svg" alt="" /> Lo mas vendido
+                <img src="assets/img/icons/descuento.svg" alt="" /> Lo mas
+                vendido
               </button>
             </li>
             <li>
@@ -116,11 +106,26 @@
         </footer>
       </aside>
       <main>
-        <h2 class="titulo-principal" id="titulo-principal">
-          Todos los productos
-        </h2>
+        <section id="headerMain">
+          <h2 class="titulo-principal" id="titulo-principal">
+            Todos los productos
+          </h2>
+          <section id="busqueda">
+            Buscar:
+            <input
+              type="text"
+              id="input-busqueda"
+              placeholder="Busqueda por nombre o categoria..."
+              autocomplete="off"
+            />
+            <img src="assets/img/icons/buscar.svg" id="lupaImg" alt="" />
+          </section>
+        </section>
         <div id="contenedor-productos" class="contenedor-productos">
           <!-- Esto se va a rellenar con JS -->
+          <div id="mensajeNoEncontrado" style="display: none">
+            Producto no encontrado
+          </div>
         </div>
       </main>
     </div>
