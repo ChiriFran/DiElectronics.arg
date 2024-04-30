@@ -190,12 +190,35 @@ function comprarCarrito() {
   contenedorRecibo.innerHTML = reciboHTML;
   contenedorRecibo.classList.remove("disabled");
 
+  // Modificar el texto en el elemento con el id "carrito-vacio"
+  contenedorCarritoVacio.innerText =
+    "¡Excelente! Tu orden de compra ha sido generada (consulta descargas).\nComparte el comprobante con el vendedor para coordinar medios de pago y entrega lo antes posible.";
+
   // Vaciar el carrito y guardar en el almacenamiento local después de generar el recibo
   productosEnCarrito.length = 0;
   localStorage.setItem(
     "productos-en-carrito",
     JSON.stringify(productosEnCarrito)
   );
+
+  const blob = new Blob([reciboHTML], { type: "text/html" }); // Crear un Blob con el contenido HTML del recibo
+
+  // Crear un objeto URL para el Blob
+  const url = window.URL.createObjectURL(blob);
+
+  // Crear un enlace <a> para descargar el recibo
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `recibo_${numeroCompraConLetra}.html`; // Nombre de archivo para la descarga
+  link.style.display = "none"; // Ocultar el enlace
+
+  // Agregar el enlace al DOM y hacer clic en él para iniciar la descarga
+  document.body.appendChild(link);
+  link.click();
+
+  // Limpiar el objeto URL y eliminar el enlace del DOM después de la descarga
+  window.URL.revokeObjectURL(url);
+  document.body.removeChild(link);
 
   // Después de vaciar el carrito, actualizar la visualización del carrito
   cargarProductosCarrito();
