@@ -574,6 +574,89 @@ main {
   width: 40px;
 }
 
+
+
+.reciboContainer{
+  display: flex;
+  width: 50%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recibo{
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.reciboTitle{
+  padding: 1rem 2rem;
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.reciboId{
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+#recibo p{
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+#recibo strong{
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  margin-left: 0.5rem;
+}
+
+#recibo li{
+  margin-left: 2rem;
+}
+
+.innerContent{
+  margin-left: 0.5rem;
+}
+
+.reciboTotal{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+
+.reciboAviso{
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  padding: 1rem 2rem;
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  border-radius: 0 0 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.reciboFooter{
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reciboFooterTitle{
+  font-size: 0.8rem;
+}
+
+.reciboFooterName{
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+
+
 /*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 850px) {

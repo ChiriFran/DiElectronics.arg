@@ -155,43 +155,50 @@ function comprarCarrito() {
   ); // Genera una letra aleatoria de la A a la J
   const numeroCompraConLetra = letraAleatoria + numeroCompra; // Agrega la letra al número de compra
 
-  productosEnCarrito.length = 0;
-  localStorage.setItem(
-    "productos-en-carrito",
-    JSON.stringify(productosEnCarrito)
-  );
-
-  contenedorCarritoVacio.classList.add("disabled");
-  contenedorCarritoProductos.classList.add("disabled");
-  contenedorCarritoAcciones.classList.add("disabled");
-  contenedorCarritoComprado.classList.remove("disabled");
-
   const totalCalculado = productosEnCarrito.reduce(
     (acc, producto) => acc + producto.precio * producto.cantidad,
     0
   );
 
   const reciboHTML = `
-        <div class="recibo">
-            <h2>Recibo de pedido</h2>
-            <p><strong>Número de compra:</strong> ${numeroCompraConLetra}</p>
-            <p><strong>Fecha:</strong> ${dia}/${mes}/${año}</p>
-            <p><strong>Hora:</strong> ${hora}:${minutos}</p>
-            <p><strong>Productos:</strong></p>
-            <ul>
-                ${productosEnCarrito
-                  .map(
-                    (producto) =>
-                      `<li>${producto.titulo} - $${producto.precio} x ${producto.cantidad}</li>`
-                  )
-                  .join("")}
-            </ul>
-            <p><strong>Total:</strong> $${totalCalculado}</p>
+        <div class="reciboContainer">
+          <div class="recibo">
+              <h2 class ="reciboTitle">Recibo de pedido</h2>
+              <p class="reciboId innerContent"><strong>Número de orden:</strong> #${numeroCompraConLetra}</p>
+              <p class="reciboDate innerContent"><strong>Fecha:</strong> ${dia}/${mes}/${año}</p>
+              <p class="reciboTime innerContent"><strong>Hora:</strong> ${hora}:${minutos}</p>
+              <p class="reciboProdcutos innerContent"><strong>Productos:</strong></p>
+              <ul>
+                  ${productosEnCarrito
+                    .map(
+                      (producto) =>
+                        `<li>${producto.titulo} - $${producto.precio} x ${producto.cantidad}</li>`
+                    )
+                    .join("")}
+              </ul>
+              <p class="reciboTotal"><strong>Total:</strong> $${totalCalculado}</p>
+              <h2 class ="reciboAviso">Valido por 5 dias ${dia}/${mes}/${año}</h2>
+            </div>
+        </div>
+
+        <div class="reciboFooter">
+          <h2 class ="reciboFooterTitle">Este comprabante es un pedido de compra no un comprobante de pago.</h2>
+          <h1 class ="reciboFooterName"> - dielectronics.arg - </h1>
         </div>
     `;
 
   contenedorRecibo.innerHTML = reciboHTML;
   contenedorRecibo.classList.remove("disabled");
+
+  // Vaciar el carrito y guardar en el almacenamiento local después de generar el recibo
+  productosEnCarrito.length = 0;
+  localStorage.setItem(
+    "productos-en-carrito",
+    JSON.stringify(productosEnCarrito)
+  );
+
+  // Después de vaciar el carrito, actualizar la visualización del carrito
+  cargarProductosCarrito();
 }
 
 function generarNumeroCompra() {
