@@ -176,14 +176,14 @@ function comprarCarrito() {
                     )
                     .join("")}
               </ul>
-              <p class="reciboTotal"><strong>Total:</strong> $${totalCalculado}</p>
-              <h2 class ="reciboAviso">Valido por 5 dias ${dia}/${mes}/${año}</h2>
+              <h3 class="reciboTotal"><strong>Total:</strong> $${totalCalculado}</h3>
+              <p class ="reciboAviso">Valido por 5 dias ${dia}/${mes}/${año}</p>
             </div>
         </div>
 
         <div class="reciboFooter">
-          <h2 class ="reciboFooterTitle">Este comprabante es un pedido de compra no un comprobante de pago.</h2>
-          <h1 class ="reciboFooterName"> - dielectronics.arg - </h1>
+          <h4 class ="reciboFooterTitle">Este comprabante es un pedido de compra no un comprobante de pago.</h4>
+          <h4 class ="reciboFooterName"> - dielectronics.arg - </h4>
         </div>
     `;
 
@@ -192,7 +192,7 @@ function comprarCarrito() {
 
   // Modificar el texto en el elemento con el id "carrito-vacio"
   contenedorCarritoVacio.innerText =
-    "¡Excelente! Tu orden de compra ha sido generada (consulta descargas).\nComparte el comprobante con el vendedor para coordinar medios de pago y entrega lo antes posible.";
+    "¡Excelente! Tu orden de compra ha sido generada (consulta tus descargas).\nComparte el comprobante con el vendedor para coordinar medios de pago y entrega lo antes posible.";
 
   // Vaciar el carrito y guardar en el almacenamiento local después de generar el recibo
   productosEnCarrito.length = 0;

@@ -156,7 +156,7 @@ main {
   padding: 3rem;
 }
 
-#headerMain{
+#headerMain {
   display: flex;
   width: 100%;
   flex-flow: row;
@@ -574,17 +574,7 @@ main {
   width: 40px;
 }
 
-
-
-.reciboContainer{
-  display: flex;
-  width: 50%;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.recibo{
+.reciboContainer {
   display: flex;
   width: 100%;
   flex-flow: column;
@@ -592,52 +582,60 @@ main {
   align-items: center;
 }
 
-.reciboTitle{
-  padding: 1rem 2rem;
-  background-color: var(--clr-main);
-  color: var(--clr-white);
+.recibo {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.reciboTitle {
+  padding: 1rem 1rem;
+  background-color: var(--clr-white);
+  color: var(--clr-main);
   border-radius: 1rem 1rem 0 0;
   margin-bottom: 1rem;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
-.reciboId{
+.reciboId {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-#recibo p{
+#recibo p {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-#recibo strong{
+#recibo strong {
   font-size: clamp(0.8rem, 2vw, 1rem);
   margin-left: 0.5rem;
 }
 
-#recibo li{
+#recibo li {
   margin-left: 2rem;
 }
 
-.innerContent{
+.innerContent {
   margin-left: 0.5rem;
 }
 
-.reciboTotal{
+.reciboTotal {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 0.5rem;
 }
 
-.reciboAviso{
+.reciboAviso {
   font-size: clamp(0.8rem, 2vw, 1rem);
   padding: 1rem 2rem;
-  background-color: var(--clr-main);
-  color: var(--clr-white);
+  background-color: var(--clr-white);
+  color: var(--clr-mainite);
   border-radius: 0 0 1rem 1rem;
   margin-bottom: 1rem;
 }
 
-.reciboFooter{
+.reciboFooter {
   display: flex;
   width: 100%;
   flex-flow: column;
@@ -645,16 +643,14 @@ main {
   justify-content: center;
 }
 
-.reciboFooterTitle{
-  font-size: 0.8rem;
+.reciboFooterTitle {
+  font-size: clamp(0.5rem, 2vw, 0.8rem);
 }
 
-.reciboFooterName{
-  font-size: 0.8rem;
+.reciboFooterName {
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
   margin-top: 1rem;
 }
-
-
 
 /*** MEDIA QUERIES ***/
 
@@ -671,6 +667,10 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+  .logo {
+    margin-top: 2rem;
+    padding-right: 2rem
+  }
   .wrapper {
     min-height: 100vh;
     display: flex;
@@ -687,6 +687,7 @@ main {
     opacity: 0;
     visibility: hidden;
     transition: 0.2s;
+    padding-left: 5rem;
   }
 
   .aside-visible {
@@ -706,7 +707,7 @@ main {
     padding: 2rem;
   }
 
-  #headerMain{
+  #headerMain {
     flex-flow: column;
     align-items: flex-start;
     justify-content: center;
@@ -768,10 +769,9 @@ main {
     row-gap: 1rem;
   }
 
-  .reciboContainer{
+  .reciboContainer {
     width: 80%;
   }
-  
 }
 
 @media screen and (max-width: 400px) {
