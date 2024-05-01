@@ -164,6 +164,38 @@ main {
   justify-content: space-between;
 }
 
+#ordenar {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#ordenarAlfabeticamente {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#ordenarPrecio {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#ordenarPrecio h4 {
+  margin-right: 0.5rem;
+}
+
+.btnOrdenar {
+  border: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  background-color: var(--clr-white);
+}
+
 #busqueda {
   display: flex;
   flex-flow: row;
@@ -441,32 +473,7 @@ main {
   transition-duration: 0.3s;
 }
 
-#ordenarAlfabeticamente{
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
-}
-
-#ordenarPrecio{
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
-}
-
-#ordenarPrecio h4{
-  margin-right: 0.5rem;
-}
-
-.btnOrdenar{
-  border: none;
-  margin:  0 0.5rem;
-  cursor: pointer;
-  background-color: var(--clr-white);
-}
-
-.btnOrdenar img{
+.btnOrdenar img {
   width: 25px;
   background-color: var(--clr-white);
 }
@@ -699,7 +706,7 @@ main {
 @media screen and (max-width: 600px) {
   .logo {
     margin-top: 2rem;
-    padding-right: 2rem
+    padding-right: 2rem;
   }
   .wrapper {
     min-height: 100vh;
@@ -739,7 +746,7 @@ main {
 
   #headerMain {
     flex-flow: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
   }
 
@@ -749,10 +756,30 @@ main {
 
   #busqueda {
     margin: 1rem 0;
+    order: 1;
+  }
+
+  #ordenar {
+    order: 2;
     margin-bottom: 3rem;
   }
 
-  .btnOrdenar img{
+  #ordenarAlfabeticamente{
+    order: 2;
+  }
+
+  #ordenarPrecio{
+    order: 1;
+    margin-right: 0.5rem;
+  }
+
+  #ordenar h4 {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .btnOrdenar img {
     width: 20px;
   }
 
