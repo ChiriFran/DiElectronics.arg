@@ -164,6 +164,8 @@ function actualizarNumerito() {
   numerito.innerText = nuevoNumerito;
 }
 
+/* BUSQUEDA Y FILTRO PARA LA TIENDA */
+
 inputBusqueda.addEventListener("input", () => {
   const textoBusqueda = inputBusqueda.value.trim().toLowerCase();
   const productosFiltrados = productos.filter((producto) => {
@@ -173,3 +175,87 @@ inputBusqueda.addEventListener("input", () => {
   });
   cargarProductos(productosFiltrados);
 });
+
+// Función para ordenar y renderizar los productos de mayor a menor precio
+function ordenarYRenderizarPorPrecioMayor() {
+  const productosEnPantalla = Array.from(
+    contenedorProductos.querySelectorAll(".producto")
+  );
+  const productosOrdenados = productosEnPantalla.sort((a, b) => {
+    const precioA = parseFloat(
+      a.querySelector(".producto-precio").innerText.replace("$", "")
+    );
+    const precioB = parseFloat(
+      b.querySelector(".producto-precio").innerText.replace("$", "")
+    );
+    return precioB - precioA;
+  });
+  productosOrdenados.forEach((producto) =>
+    contenedorProductos.appendChild(producto)
+  );
+}
+
+// Función para ordenar y renderizar los productos de menor a mayor precio
+function ordenarYRenderizarPorPrecioMenor() {
+  const productosEnPantalla = Array.from(
+    contenedorProductos.querySelectorAll(".producto")
+  );
+  const productosOrdenados = productosEnPantalla.sort((a, b) => {
+    const precioA = parseFloat(
+      a.querySelector(".producto-precio").innerText.replace("$", "")
+    );
+    const precioB = parseFloat(
+      b.querySelector(".producto-precio").innerText.replace("$", "")
+    );
+    return precioA - precioB;
+  });
+  productosOrdenados.forEach((producto) =>
+    contenedorProductos.appendChild(producto)
+  );
+}
+
+// Buscar los botones en el DOM
+const botonOrdenarMayor = document.querySelector("#ordenar-descendente");
+const botonOrdenarMenor = document.querySelector("#ordenar-ascendente");
+
+// Agregar eventos a los botones de ordenar
+botonOrdenarMayor.addEventListener("click", ordenarYRenderizarPorPrecioMayor);
+botonOrdenarMenor.addEventListener("click", ordenarYRenderizarPorPrecioMenor);
+
+// Función para ordenar y renderizar los productos de la A a la Z
+function ordenarYRenderizarPorNombreAZ() {
+  const productosEnPantalla = Array.from(
+    contenedorProductos.querySelectorAll(".producto")
+  );
+  const productosOrdenados = productosEnPantalla.sort((a, b) => {
+    const nombreA = a.querySelector(".producto-titulo").innerText.toLowerCase();
+    const nombreB = b.querySelector(".producto-titulo").innerText.toLowerCase();
+    return nombreA.localeCompare(nombreB);
+  });
+  productosOrdenados.forEach((producto) =>
+    contenedorProductos.appendChild(producto)
+  );
+}
+
+// Función para ordenar y renderizar los productos de la Z a la A
+function ordenarYRenderizarPorNombreZA() {
+  const productosEnPantalla = Array.from(
+    contenedorProductos.querySelectorAll(".producto")
+  );
+  const productosOrdenados = productosEnPantalla.sort((a, b) => {
+    const nombreA = a.querySelector(".producto-titulo").innerText.toLowerCase();
+    const nombreB = b.querySelector(".producto-titulo").innerText.toLowerCase();
+    return nombreB.localeCompare(nombreA);
+  });
+  productosOrdenados.forEach((producto) =>
+    contenedorProductos.appendChild(producto)
+  );
+}
+
+// Buscar los botones en el DOM
+const botonOrdenarNombreAZ = document.querySelector("#ordenar-nombre-az");
+const botonOrdenarNombreZA = document.querySelector("#ordenar-nombre-za");
+
+// Agregar eventos a los botones de ordenar por nombre
+botonOrdenarNombreAZ.addEventListener("click", ordenarYRenderizarPorNombreAZ);
+botonOrdenarNombreZA.addEventListener("click", ordenarYRenderizarPorNombreZA);

@@ -97,7 +97,7 @@
             </ul>
           </div>
         </section>
-        
+
         <footer>
           <section class="mediosDePago">
             <img src="./img/icons/visa-svgrepo-com.svg" alt="" />
@@ -112,6 +112,16 @@
           <h2 class="titulo-principal" id="titulo-principal">
             Todos los productos
           </h2>
+          <section id="ordenarAlfabeticamente">
+            <h4>Ordenar: </h4>
+            <button id="ordenar-nombre-az" class="btnOrdenar"><img src="assets/img/icons/ordenar-z-a.svg" alt=""></button>
+            <button id="ordenar-nombre-za" class="btnOrdenar"><img src="assets/img/icons/ordenar-a-z.svg" alt=""></button>
+          </section>
+          <section id="ordenarPrecio">
+            <h4>Precio: </h4>
+            <button id="ordenar-ascendente" class="btnOrdenar"><img src="assets/img/icons/ordenar-1-9.svg" alt=""></button>
+            <button id="ordenar-descendente" class="btnOrdenar"><img src="assets/img/icons/ordenar-9-1.svg" alt=""></button>
+          </section>
           <section id="busqueda">
             Buscar:
             <input
@@ -123,6 +133,7 @@
             <img src="assets/img/icons/buscar.svg" id="lupaImg" alt="" />
           </section>
         </section>
+
         <div id="contenedor-productos" class="contenedor-productos">
           <!-- Esto se va a rellenar con JS -->
           <div id="mensajeNoEncontrado" style="display: none">

@@ -169,7 +169,7 @@ main {
   flex-flow: row;
   align-items: center;
   justify-content: start;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem 1rem 0;
   font-size: 1rem;
 }
 
@@ -189,7 +189,7 @@ main {
 
 .titulo-principal {
   color: var(--clr-main);
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .contenedor-productos {
@@ -439,6 +439,36 @@ main {
   opacity: 1;
   transform: translateY(35px);
   transition-duration: 0.3s;
+}
+
+#ordenarAlfabeticamente{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#ordenarPrecio{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#ordenarPrecio h4{
+  margin-right: 0.5rem;
+}
+
+.btnOrdenar{
+  border: none;
+  margin:  0 0.5rem;
+  cursor: pointer;
+  background-color: var(--clr-white);
+}
+
+.btnOrdenar img{
+  width: 25px;
+  background-color: var(--clr-white);
 }
 
 /** CARRITO **/
@@ -720,6 +750,10 @@ main {
   #busqueda {
     margin: 1rem 0;
     margin-bottom: 3rem;
+  }
+
+  .btnOrdenar img{
+    width: 20px;
   }
 
   .contenedor-productos {
