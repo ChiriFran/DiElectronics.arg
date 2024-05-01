@@ -757,6 +757,7 @@ main {
   #busqueda {
     margin: 1rem 0;
     order: 1;
+    font-weight: 500;
   }
 
   #ordenar {
@@ -777,10 +778,6 @@ main {
     font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 500;
     font-style: normal;
-  }
-
-  .btnOrdenar img {
-    width: 20px;
   }
 
   .contenedor-productos {
