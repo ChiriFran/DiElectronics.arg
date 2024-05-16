@@ -68,7 +68,7 @@ function cargarProductos(productosElegidos) {
       // Cargar productos filtrados
       cargarProductos(productosTopSale);
       // Actualizar título principal
-      tituloPrincipal.innerText = "Productos destacados";
+      tituloPrincipal.innerText = "Lo mas vendido";
     } else if (e.currentTarget.id !== "todos") {
       // Filtrar productos por categoría
       const productosCategoria = productos.filter(

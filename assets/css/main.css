@@ -221,6 +221,7 @@ main {
   justify-content: start;
   margin: 1rem 2rem 1rem 0;
   font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 #busqueda h3 {
@@ -846,12 +847,13 @@ main {
 
   #headerMain {
     flex-flow: column;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
   }
 
   .titulo-principal {
     margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.8);
   }
 
   .filtersContainer {
@@ -872,11 +874,11 @@ main {
     margin-bottom: 1rem;
     order: 2;
   }
-  #ordenar h3{
+  #ordenar h3 {
     margin: 0.3rem 0;
   }
 
-  #ordenarAlfabeticamente{
+  #ordenarAlfabeticamente {
     margin: 0.5rem 0;
   }
 
