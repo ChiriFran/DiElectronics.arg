@@ -164,6 +164,15 @@ main {
   justify-content: space-between;
 }
 
+.filtersContainer {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
 #ordenar {
   display: flex;
   flex-flow: row;
@@ -171,11 +180,18 @@ main {
   justify-content: center;
 }
 
+#ordenar h3 {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-right: 1rem;
+}
+
 #ordenarAlfabeticamente {
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 #ordenarPrecio {
@@ -183,6 +199,8 @@ main {
   flex-flow: row;
   align-items: center;
   justify-content: center;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 1rem;
 }
 
 #ordenarPrecio h4 {
@@ -205,6 +223,11 @@ main {
   font-size: 1rem;
 }
 
+#busqueda h3 {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 #input-busqueda {
   border: none;
   padding: 0.5rem 0.5rem;
@@ -221,7 +244,7 @@ main {
 
 .titulo-principal {
   color: var(--clr-main);
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 .contenedor-productos {
@@ -831,23 +854,43 @@ main {
     margin-bottom: 1rem;
   }
 
+  .filtersContainer {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: baseline;
+    padding: 0 0;
+    margin-bottom: 3rem;
+  }
+
+  #ordenar {
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0.3rem 0;
+    margin-bottom: 1rem;
+    order: 2;
+  }
+  #ordenar h3{
+    margin: 0.3rem 0;
+  }
+
+  #ordenarAlfabeticamente{
+    margin: 0.5rem 0;
+  }
+
+  #ordenarPrecio {
+    margin-left: 0;
+  }
+
   #busqueda {
     margin: 1rem 0;
     order: 1;
     font-weight: 500;
   }
 
-  #ordenar {
-    order: 2;
-    margin-bottom: 3rem;
-  }
-
-  #ordenarAlfabeticamente {
-    order: 2;
-  }
-
   #ordenarPrecio {
-    order: 1;
     margin-right: 0.5rem;
   }
 
