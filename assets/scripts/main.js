@@ -292,11 +292,11 @@ function mostrarEspecificaciones(especificaciones, tituloProducto) {
   modal.innerHTML = `
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h4 class="especificacionesTitulo">Especificaciones de:</h4>
+      <h4 class="especificacionesTitulo">Especificaciones</h4>
       <h3 class="especificacionesProducto">${tituloProducto}</h3>
       <ul>
         <li class="especificacionesAcabado">Acabado: ${especificaciones.acabado}</li>
-        <li class="especificacionesProductoCapacidad: ${especificaciones.capacidad}</li>
+        <li class="especificacionesAcabado">Capacidad: ${especificaciones.capacidad}</li>
         <li class="especificacionesDimensiones">Dimensiones: ${especificaciones.dimensiones}</li>
         <li class="especificacionesPantalla">Pantalla: ${especificaciones.pantalla}</li>
         <li class="especificacionesChip">Chip: ${especificaciones.chip}</li>

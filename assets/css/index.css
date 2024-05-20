@@ -276,6 +276,25 @@ header {
   font-size: clamp(0.8rem, 2vw, 1.5rem);
 }
 
+.familiaParent {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 1rem;
+  }
+  
+  .familiaDiv1 { grid-area: 1 / 1 / 7 / 3; }
+  .familiaDiv2 { grid-area: 7 / 1 / 11 / 3; }
+  .familiaDiv3 { grid-area: 1 / 3 / 5 / 5; }
+  .familiaDiv4 { grid-area: 7 / 3 / 11 / 5; }
+  .familiaDiv5 { grid-area: 1 / 5 / 5 / 7; }
+  .familiaDiv6 { grid-area: 7 / 5 / 11 / 7; }
+  .familiaDiv7 { grid-area: 1 / 7 / 5 / 9; }
+  .familiaDiv8 { grid-area: 7 / 7 / 11 / 9; }
+  .familiaDiv9 { grid-area: 1 / 9 / 6 / 11; }
+  .familiaDiv10 { grid-area: 6 / 9 / 11 / 11; }
+  .familiaDiv11 { grid-area: 5 / 3 / 7 / 9; }
+
 /* HERO */
 .slider-container-hero {
   position: relative;
