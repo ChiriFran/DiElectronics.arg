@@ -38,6 +38,7 @@ function cargarProductos(productosElegidos) {
                 <div class="producto-detalles">
                     <h3 class="producto-titulo">${producto.titulo}</h3>
                     <p class="producto-precio">$${producto.precio} USD</p>
+                    <button class="btn-ver-mas" data-id="${producto.id}">Ver más</button>
                     <button class="btn-96 producto-agregar" id="${producto.id}"><span>Agregar</span></button>
                 </div>
             `;
@@ -259,3 +260,67 @@ const botonOrdenarNombreZA = document.querySelector("#ordenar-nombre-za");
 // Agregar eventos a los botones de ordenar por nombre
 botonOrdenarNombreAZ.addEventListener("click", ordenarYRenderizarPorNombreAZ);
 botonOrdenarNombreZA.addEventListener("click", ordenarYRenderizarPorNombreZA);
+
+/* fetch especificaciones */
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("btn-ver-mas")) {
+    const productoTitulo =
+      event.target.parentElement.querySelector(".producto-titulo").innerText;
+    fetch("assets/scripts/especificaciones.json")
+      .then((response) => response.json())
+      .then((data) => {
+        // Buscar las especificaciones según el título del producto
+        const especificaciones = data.find(
+          (item) => item.id.toLowerCase() === productoTitulo.toLowerCase()
+        );
+        if (especificaciones) {
+          mostrarEspecificaciones(especificaciones, productoTitulo);
+        } else {
+          console.error(
+            "No se encontraron especificaciones para el producto:",
+            productoTitulo
+          );
+        }
+      });
+  }
+});
+
+function mostrarEspecificaciones(especificaciones, tituloProducto) {
+  // Crear el modal
+  const modal = document.createElement("div");
+  modal.classList.add("modal");
+  modal.innerHTML = `
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h4 class="especificacionesTitulo">Especificaciones de:</h4>
+      <h3 class="especificacionesProducto">${tituloProducto}</h3>
+      <ul>
+        <li class="especificacionesAcabado">Acabado: ${especificaciones.acabado}</li>
+        <li class="especificacionesProductoCapacidad: ${especificaciones.capacidad}</li>
+        <li class="especificacionesDimensiones">Dimensiones: ${especificaciones.dimensiones}</li>
+        <li class="especificacionesPantalla">Pantalla: ${especificaciones.pantalla}</li>
+        <li class="especificacionesChip">Chip: ${especificaciones.chip}</li>
+        <li class="especificacionesCamara">Cámara: ${especificaciones.camara}</li>
+      </ul>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  // Obtener el botón para cerrar el modal
+  const closeButton = modal.querySelector(".close");
+
+  // Cerrar el modal cuando se hace clic en el botón de cerrar
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Cerrar el modal al hacer clic fuera de él
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Mostrar el modal
+  modal.style.display = "block";
+}
