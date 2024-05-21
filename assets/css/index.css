@@ -352,6 +352,7 @@ header {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-size: 2.5rem;
   letter-spacing: 1px;
   background-color: var(--colorFont);
@@ -1244,6 +1245,36 @@ dialog::backdrop {
     color: var(--colorTittle);
   }
 
+  .modalNav {
+    width: 90% !important;
+    height: 100vh !important;
+  }
+
+  .familiaParent {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    margin: 0.5rem 0.5rem;
+    margin-top: 5rem;
+  }
+
+  .familiaDiv1, .familiaDiv2, .familiaDiv3, .familiaDiv4,
+  .familiaDiv5, .familiaDiv6, .familiaDiv7, .familiaDiv8,
+  .familiaDiv9{
+    width: 100%;
+    height: 50%;
+    order: 2;
+  }
+
+  .familiaDiv11{
+    order: 1;
+    padding: 0.3rem 5rem;
+    font-size: 1.8rem;
+  }
+
   #acercaDiElectronics {
     width: 100%;
     height: 200vh;
@@ -1265,18 +1296,18 @@ dialog::backdrop {
   }
 
   .scroll-container {
-    display: inline-flex; /* Para que los elementos estén en línea */
+    display: inline-flex; 
   }
 
   .container {
     padding: 3rem 2rem;
-    width: auto; /* Permitir que el contenedor se expanda según el contenido */
+    width: auto; 
   }
 
   .container .glass {
     width: 300px;
     height: 300px;
-    margin: 0 40px; /* Ajustar margen para que haya espacio entre los elementos */
+    margin: 0 40px; 
     transform: rotate(0deg);
   }
 
