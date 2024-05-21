@@ -24,7 +24,6 @@ function cargarProductos(productosElegidos) {
   contenedorProductos.innerHTML = "";
 
   if (productosElegidos.length === 0) {
-    // Mostrar mensaje de que no hay productos disponibles
     contenedorProductos.innerHTML =
       "<p>No hay productos disponibles con nombre o categoria '" +
       document.getElementById("input-busqueda").value +
@@ -39,55 +38,41 @@ function cargarProductos(productosElegidos) {
                     <h3 class="producto-titulo">${producto.titulo}</h3>
                     <p class="producto-precio">$${producto.precio} USD</p>
                     <button class="btn-ver-mas" data-id="${producto.id}">Ver más</button>
-                    <button class="btn-96 producto-agregar" id="${producto.id}"><span>Agregar</span></button>
+                    <button class="btn-96 producto-agregar" data-id="${producto.id}"><span>Agregar</span></button>
                 </div>
             `;
-
       contenedorProductos.append(div);
     });
   }
 
-  // Actualizar botones de agregar
   actualizarBotonesAgregar();
 }
 
-// Agregar evento de clic a todos los botones de categoría y el nuevo botón topSale
 [...botonesCategorias, document.querySelector("#topSale")].forEach((boton) => {
   boton.addEventListener("click", (e) => {
-    // Quitar clase 'active' de todos los botones
     [...botonesCategorias, document.querySelector("#topSale")].forEach(
       (boton) => boton.classList.remove("active")
     );
-    // Agregar clase 'active' al botón clickeado
     e.currentTarget.classList.add("active");
 
     if (e.currentTarget.id === "topSale") {
-      // Filtrar productos por estado topSale
       const productosTopSale = productos.filter(
         (producto) => producto.estado === "topSale"
       );
-      // Cargar productos filtrados
       cargarProductos(productosTopSale);
-      // Actualizar título principal
       tituloPrincipal.innerText = "Lo mas vendido";
     } else if (e.currentTarget.id !== "todos") {
-      // Filtrar productos por categoría
       const productosCategoria = productos.filter(
         (producto) => producto.categoria.id === e.currentTarget.id
       );
-      // Obtener nombre de la categoría
       const nombreCategoria =
         productosCategoria.length > 0
           ? productosCategoria[0].categoria.nombre
           : "";
-      // Cargar productos filtrados
       cargarProductos(productosCategoria);
-      // Actualizar título principal
       tituloPrincipal.innerText = nombreCategoria;
     } else {
-      // Mostrar todos los productos
       cargarProductos(productos);
-      // Actualizar título principal
       tituloPrincipal.innerText = "Todos los productos";
     }
   });
@@ -97,29 +82,25 @@ function actualizarBotonesAgregar() {
   botonesAgregar = document.querySelectorAll(".producto-agregar");
 
   botonesAgregar.forEach((boton) => {
-    boton.addEventListener("click", agregarAlCarrito);
+    boton.addEventListener("click", (e) => {
+      const idBoton = e.currentTarget.dataset.id;
+      agregarAlCarrito(idBoton);
+    });
   });
 }
 
-let productosEnCarrito;
+let productosEnCarrito =
+  JSON.parse(localStorage.getItem("productos-en-carrito")) || [];
+actualizarNumerito();
 
-let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
-
-if (productosEnCarritoLS) {
-  productosEnCarrito = JSON.parse(productosEnCarritoLS);
-  actualizarNumerito();
-} else {
-  productosEnCarrito = [];
-}
-
-function agregarAlCarrito(e) {
+function agregarAlCarrito(idProducto) {
   Toastify({
     text: "Producto agregado",
     duration: 3000,
     close: true,
-    gravity: "top", // `top` or `bottom`
-    position: "right", // `left`, `center` or `right`
-    stopOnFocus: true, // Prevents dismissing of toast on hover
+    gravity: "top",
+    position: "right",
+    stopOnFocus: true,
     style: {
       background: "linear-gradient(to right, #0e0700, #502902)",
       borderRadius: "2rem",
@@ -128,29 +109,28 @@ function agregarAlCarrito(e) {
       color: "#fff",
     },
     offset: {
-      x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-      y: "1.5rem", // vertical axis - can be a number or a string indicating unity. eg: '2em'
+      x: "1.5rem",
+      y: "1.5rem",
     },
-    onClick: function () {}, // Callback after click
+    onClick: function () {},
   }).showToast();
 
-  const idBoton = e.currentTarget.id;
   const productoAgregado = productos.find(
-    (producto) => producto.id === idBoton
+    (producto) => producto.id === idProducto
   );
 
-  if (productosEnCarrito.some((producto) => producto.id === idBoton)) {
-    const index = productosEnCarrito.findIndex(
-      (producto) => producto.id === idBoton
-    );
-    productosEnCarrito[index].cantidad++;
+  const productoEnCarrito = productosEnCarrito.find(
+    (productoCarrito) => productoCarrito.id === idProducto
+  );
+
+  if (productoEnCarrito) {
+    productoEnCarrito.cantidad++;
   } else {
     productoAgregado.cantidad = 1;
     productosEnCarrito.push(productoAgregado);
   }
 
   actualizarNumerito();
-
   localStorage.setItem(
     "productos-en-carrito",
     JSON.stringify(productosEnCarrito)
@@ -165,8 +145,6 @@ function actualizarNumerito() {
   numerito.innerText = nuevoNumerito;
 }
 
-/* BUSQUEDA Y FILTRO PARA LA TIENDA */
-
 inputBusqueda.addEventListener("input", () => {
   const textoBusqueda = inputBusqueda.value.trim().toLowerCase();
   const productosFiltrados = productos.filter((producto) => {
@@ -177,7 +155,6 @@ inputBusqueda.addEventListener("input", () => {
   cargarProductos(productosFiltrados);
 });
 
-// Función para ordenar y renderizar los productos de mayor a menor precio
 function ordenarYRenderizarPorPrecioMayor() {
   const productosEnPantalla = Array.from(
     contenedorProductos.querySelectorAll(".producto")
@@ -196,7 +173,6 @@ function ordenarYRenderizarPorPrecioMayor() {
   );
 }
 
-// Función para ordenar y renderizar los productos de menor a mayor precio
 function ordenarYRenderizarPorPrecioMenor() {
   const productosEnPantalla = Array.from(
     contenedorProductos.querySelectorAll(".producto")
@@ -215,15 +191,12 @@ function ordenarYRenderizarPorPrecioMenor() {
   );
 }
 
-// Buscar los botones en el DOM
 const botonOrdenarMayor = document.querySelector("#ordenar-descendente");
 const botonOrdenarMenor = document.querySelector("#ordenar-ascendente");
 
-// Agregar eventos a los botones de ordenar
 botonOrdenarMayor.addEventListener("click", ordenarYRenderizarPorPrecioMayor);
 botonOrdenarMenor.addEventListener("click", ordenarYRenderizarPorPrecioMenor);
 
-// Función para ordenar y renderizar los productos de la A a la Z
 function ordenarYRenderizarPorNombreAZ() {
   const productosEnPantalla = Array.from(
     contenedorProductos.querySelectorAll(".producto")
@@ -238,7 +211,6 @@ function ordenarYRenderizarPorNombreAZ() {
   );
 }
 
-// Función para ordenar y renderizar los productos de la Z a la A
 function ordenarYRenderizarPorNombreZA() {
   const productosEnPantalla = Array.from(
     contenedorProductos.querySelectorAll(".producto")
@@ -253,50 +225,55 @@ function ordenarYRenderizarPorNombreZA() {
   );
 }
 
-// Buscar los botones en el DOM
 const botonOrdenarNombreAZ = document.querySelector("#ordenar-nombre-az");
 const botonOrdenarNombreZA = document.querySelector("#ordenar-nombre-za");
 
-// Agregar eventos a los botones de ordenar por nombre
 botonOrdenarNombreAZ.addEventListener("click", ordenarYRenderizarPorNombreAZ);
 botonOrdenarNombreZA.addEventListener("click", ordenarYRenderizarPorNombreZA);
 
-/* fetch especificaciones */
 document.addEventListener("click", (event) => {
   if (event.target.classList.contains("btn-ver-mas")) {
-    const productoTitulo =
-      event.target.parentElement.querySelector(".producto-titulo").innerText;
-    fetch("assets/scripts/especificaciones.json")
-      .then((response) => response.json())
-      .then((data) => {
-        // Buscar las especificaciones según el título del producto
-        const especificaciones = data.find(
-          (item) => item.id.toLowerCase() === productoTitulo.toLowerCase()
-        );
-        if (especificaciones) {
-          mostrarEspecificaciones(especificaciones, productoTitulo);
-        } else {
-          console.error(
-            "No se encontraron especificaciones para el producto:",
-            productoTitulo
+    const productoId = event.target.dataset.id;
+    const producto = productos.find((prod) => prod.id === productoId);
+    if (producto) {
+      fetch("assets/scripts/especificaciones.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const especificaciones = data.find(
+            (item) => item.id.toLowerCase() === producto.titulo.toLowerCase()
           );
-        }
-      });
+          if (especificaciones) {
+            mostrarEspecificaciones(especificaciones, producto);
+          } else {
+            console.error(
+              "No se encontraron especificaciones para el producto:",
+              producto.titulo
+            );
+          }
+        });
+    }
   }
 });
 
-function mostrarEspecificaciones(especificaciones, tituloProducto) {
-  // Crear el modal
+function mostrarEspecificaciones(especificaciones, producto) {
   const modal = document.createElement("div");
   modal.classList.add("modal");
   modal.innerHTML = `
     <div class="modal-content">
       <span class="close">&times;</span>
+      <div class="producto-modal-container">
+        <img class="producto-modal-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+        <div class="producto-modal-detalles">
+            <h3 class="producto-titulo">${producto.titulo}</h3>
+            <p class="producto-precio">$${producto.precio} USD</p>
+            <button class="btn-96 producto-agregar" data-id="${producto.id}"><span>Agregar</span></button>
+        </div>
+      </div>
       <h4 class="especificacionesTitulo">Especificaciones</h4>
-      <h3 class="especificacionesProducto">${tituloProducto}</h3>
+      <h3 class="especificacionesProducto">${producto.titulo}</h3>
       <ul>
         <li class="especificacionesAcabado">Acabado: ${especificaciones.acabado}</li>
-        <li class="especificacionesAcabado">Capacidad: ${especificaciones.capacidad}</li>
+        <li class="especificacionesCapacidad">Capacidad: ${especificaciones.capacidad}</li>
         <li class="especificacionesDimensiones">Dimensiones: ${especificaciones.dimensiones}</li>
         <li class="especificacionesPantalla">Pantalla: ${especificaciones.pantalla}</li>
         <li class="especificacionesChip">Chip: ${especificaciones.chip}</li>
@@ -306,21 +283,23 @@ function mostrarEspecificaciones(especificaciones, tituloProducto) {
   `;
   document.body.appendChild(modal);
 
-  // Obtener el botón para cerrar el modal
   const closeButton = modal.querySelector(".close");
-
-  // Cerrar el modal cuando se hace clic en el botón de cerrar
   closeButton.addEventListener("click", () => {
     modal.style.display = "none";
   });
 
-  // Cerrar el modal al hacer clic fuera de él
   window.addEventListener("click", (event) => {
     if (event.target === modal) {
       modal.style.display = "none";
     }
   });
 
-  // Mostrar el modal
+  const botonAgregar = modal.querySelector(".producto-agregar");
+  botonAgregar.addEventListener("click", (e) => {
+    const idProducto = e.currentTarget.dataset.id;
+    agregarAlCarrito(idProducto);
+    modal.style.display = "none";
+  });
+
   modal.style.display = "block";
 }
