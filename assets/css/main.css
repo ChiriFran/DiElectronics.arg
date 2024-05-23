@@ -1015,13 +1015,13 @@ dialog::backdrop {
   .filtersAnimation {
     opacity: 1;
     transform: translateY(0);
-    transition: 0.4s;
+    transition: 0.5s;
     position: relative;
     visibility: visible;
   }
 
   #filterArrow {
-    margin-left: 0.5rem;
+    transition: 0.5s;
   }
 
   #ordenarAlfabeticamente {
@@ -1071,7 +1071,6 @@ dialog::backdrop {
     width: 100%;
     height: 100%;
     padding: 0.5rem 0.2rem !important;
-
   }
 
   .contenedor-productos {

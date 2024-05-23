@@ -23,16 +23,19 @@ botonesCategorias.forEach((boton) =>
 /* animacion filtros */
 function filtersAnimation() {
   let btnFilters = document.getElementById("btnOrdenar");
+  let filterArrow = document.getElementById("filterArrow");
+
   btnFilters.addEventListener("click", () => {
     let btnAnimation = document.querySelectorAll(".btnAnimation");
     btnAnimation.forEach((btn) => {
       if (!btn.classList.contains("filtersAnimation")) {
         btn.classList.add("filtersAnimation");
+        filterArrow.style.transform = "rotate(180deg)"; // Rotar 180 grados
       } else {
         btn.classList.remove("filtersAnimation");
+        filterArrow.style.transform = "rotate(0deg)"; // Devolver a posición original
       }
     });
-    console.log("click");
   });
 }
 
