@@ -135,6 +135,15 @@ function agregarAlCarrito(idProducto) {
     "productos-en-carrito",
     JSON.stringify(productosEnCarrito)
   );
+
+  // Actualizar la cantidad en el modal
+  const cantidadEnCarrito = obtenerCantidadEnCarrito(idProducto);
+  const cantidadElement = document.querySelector(
+    ".producto-modal-cantidad-en-carrito"
+  );
+  if (cantidadElement) {
+    cantidadElement.innerText = `Unidad/es en carrito: ${cantidadEnCarrito}`;
+  }
 }
 
 function actualizarNumerito() {
@@ -255,9 +264,19 @@ document.addEventListener("click", (event) => {
   }
 });
 
+function obtenerCantidadEnCarrito(idProducto) {
+  const productoEnCarrito = productosEnCarrito.find(
+    (producto) => producto.id === idProducto
+  );
+  return productoEnCarrito ? productoEnCarrito.cantidad : 0;
+}
+
 function mostrarEspecificaciones(especificaciones, producto) {
+  const cantidadEnCarrito = obtenerCantidadEnCarrito(producto.id);
+
   const modal = document.createElement("div");
   modal.classList.add("modal");
+  modal.setAttribute("id", `modal-${producto.id}`); // Agregar un id único al modal
   modal.innerHTML = `
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -267,6 +286,7 @@ function mostrarEspecificaciones(especificaciones, producto) {
             <h3 class="producto-titulo">${producto.titulo}</h3>
             <p class="producto-precio">$${producto.precio} USD</p>
             <button class="btn-96 producto-agregar" data-id="${producto.id}"><span>Agregar</span></button>
+            <p class="producto-modal-cantidad-en-carrito">Unidad/es en carrito: ${cantidadEnCarrito}</p>
         </div>
       </div>
       <h4 class="especificacionesTitulo">Especificaciones</h4>
@@ -298,7 +318,15 @@ function mostrarEspecificaciones(especificaciones, producto) {
   botonAgregar.addEventListener("click", (e) => {
     const idProducto = e.currentTarget.dataset.id;
     agregarAlCarrito(idProducto);
-    modal.style.display = "none";
+
+    // Actualizar la cantidad en el modal correspondiente
+    const cantidadEnCarrito = obtenerCantidadEnCarrito(idProducto);
+    const cantidadElement = modal.querySelector(
+      ".producto-modal-cantidad-en-carrito"
+    ); // Selección específica del modal
+    if (cantidadElement) {
+      cantidadElement.innerText = `Unidad/es en carrito: ${cantidadEnCarrito}`;
+    }
   });
 
   modal.style.display = "block";

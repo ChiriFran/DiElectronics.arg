@@ -565,6 +565,12 @@ dialog::backdrop {
   width: 100%;
 }
 
+.producto-modal-cantidad-en-carrito{
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
 .producto-modal-detalles {
   display: flex;
   flex-flow: column;
@@ -1037,6 +1043,10 @@ dialog::backdrop {
   }
 
   .modal-content {
+    background-color: #fefefe;
+    margin: 3% auto;
+    padding: 1rem 1rem;
+    border-radius: 0.1rem;
     width: 80%;
   }
 

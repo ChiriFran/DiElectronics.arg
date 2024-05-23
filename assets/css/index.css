@@ -913,19 +913,6 @@ footer nav ul li:hover {
   margin: 0.3rem 0;
 }
 
-#footerLogo {
-  width: 100%;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--colorFont);
-}
-
-#footerLogo img {
-  width: clamp(150px, 2vw, 200px);
-}
-
 .infoMobile {
   display: none;
 }
