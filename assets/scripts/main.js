@@ -20,6 +20,24 @@ botonesCategorias.forEach((boton) =>
   })
 );
 
+/* animacion filtros */
+function filtersAnimation() {
+  let btnFilters = document.getElementById("btnOrdenar");
+  btnFilters.addEventListener("click", () => {
+    let btnAnimation = document.querySelectorAll(".btnAnimation");
+    btnAnimation.forEach((btn) => {
+      if (!btn.classList.contains("filtersAnimation")) {
+        btn.classList.add("filtersAnimation");
+      } else {
+        btn.classList.remove("filtersAnimation");
+      }
+    });
+    console.log("click");
+  });
+}
+
+filtersAnimation();
+
 function cargarProductos(productosElegidos) {
   contenedorProductos.innerHTML = "";
 

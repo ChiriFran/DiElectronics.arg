@@ -86,7 +86,7 @@
             </li>
           </ul>
         </nav>
-<!-- 
+        <!-- 
         <div class="item-hints">
           <div class="hint" data-position="4">
             <span class="hint-radius"></span>
@@ -108,8 +108,17 @@
 
         <section class="filtersContainer">
           <section id="ordenar">
-            <h3>Filtrar: </h3>
-            <section id="ordenarAlfabeticamente">
+            <section id="btnOrdenar">
+              <h3 id="showFilters">Filtrar</h3>
+              <img
+                id="filterArrow"
+                src="./assets/img/icons/flechaAbajo.svg"
+                width="16px"
+                alt=""
+              />
+            </section>
+
+            <section id="ordenarAlfabeticamente" class="btnAnimation">
               <h4>Alfabeticamente:</h4>
               <button id="ordenar-nombre-az" class="btnOrdenar">
                 <img src="assets/img/icons/ordenar-z-a.svg" alt="" />
@@ -118,7 +127,8 @@
                 <img src="assets/img/icons/ordenar-a-z.svg" alt="" />
               </button>
             </section>
-            <section id="ordenarPrecio">
+
+            <section id="ordenarPrecio" class="btnAnimation">
               <h4>Precio:</h4>
               <button id="ordenar-ascendente" class="btnOrdenar">
                 <img src="assets/img/icons/ordenar-1-9.svg" alt="" />
@@ -127,9 +137,43 @@
                 <img src="assets/img/icons/ordenar-9-1.svg" alt="" />
               </button>
             </section>
+
+            <section id="ordenarCategoriaMobile" class="btnAnimation">
+              <ul class="categoriasMobile">
+                <li>
+                  <button id="todos" class="boton-categoria">Todo</button>
+                </li>
+                <li>
+                  <button id="topSale" class="boton-categoria">
+                    Lo mas vendido
+                  </button>
+                </li>
+                <li>
+                  <button id="celulares" class="boton-categoria padding">
+                    Celulares
+                  </button>
+                </li>
+                <li>
+                  <button id="auriculares" class="boton-categoria padding">
+                    Auriculares
+                  </button>
+                </li>
+                <li>
+                  <button id="computadoras" class="boton-categoria padding">
+                    Computadoras
+                  </button>
+                </li>
+                <li>
+                  <button id="relojes" class="boton-categoria padding">
+                    Relojes
+                  </button>
+                </li>
+              </ul>
+            </section>
           </section>
+
           <section id="busqueda">
-            <h4>Buscar: </h4>
+            <h4>Buscar:</h4>
             <input
               type="text"
               id="input-busqueda"

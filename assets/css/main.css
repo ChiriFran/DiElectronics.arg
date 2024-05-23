@@ -243,6 +243,10 @@ main {
   margin-right: 1rem;
 }
 
+#ordenarCategoriaMobile {
+  display: none;
+}
+
 .titulo-principal {
   color: var(--clr-main);
   margin-bottom: 2rem;
@@ -565,8 +569,8 @@ dialog::backdrop {
   width: 100%;
 }
 
-.producto-modal-cantidad-en-carrito{
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
+.producto-modal-cantidad-en-carrito {
+  font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 500;
 }
@@ -971,7 +975,13 @@ dialog::backdrop {
     width: 100%;
     align-items: baseline;
     padding: 0 0;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #busqueda {
+    margin: 1rem 0;
+    order: 1;
+    font-weight: 500;
   }
 
   #ordenar {
@@ -983,8 +993,35 @@ dialog::backdrop {
     margin-bottom: 1rem;
     order: 2;
   }
-  #ordenar h3 {
-    margin: 0.3rem 0;
+
+  #btnOrdenar {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0.5rem 0;
+  }
+
+  .btnAnimation {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 0;
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .filtersAnimation {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.4s;
+    position: relative;
+    visibility: visible;
+  }
+
+  #filterArrow {
+    margin-left: 0.5rem;
   }
 
   #ordenarAlfabeticamente {
@@ -995,12 +1032,6 @@ dialog::backdrop {
     margin-left: 0;
   }
 
-  #busqueda {
-    margin: 1rem 0;
-    order: 1;
-    font-weight: 500;
-  }
-
   #ordenarPrecio {
     margin-right: 0.5rem;
   }
@@ -1009,6 +1040,38 @@ dialog::backdrop {
     font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 500;
     font-style: normal;
+  }
+
+  #ordenarCategoriaMobile {
+    order: 3;
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .categoriasMobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+  }
+
+  .categoriasMobile li button {
+    border: 2px solid var(--clr-main-light);
+    color: var(--clr-main);
+    font-size: 0.8rem;
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0.2rem !important;
+
   }
 
   .contenedor-productos {
@@ -1044,7 +1107,7 @@ dialog::backdrop {
 
   .modal-content {
     background-color: #fefefe;
-    margin: 3% auto;
+    margin: 8% auto;
     padding: 1rem 1rem;
     border-radius: 0.1rem;
     width: 80%;
