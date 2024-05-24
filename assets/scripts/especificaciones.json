@@ -4,18 +4,26 @@
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal). Pico de brillo de 1,600 nits (HDR), pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares. ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm. Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "iphone 14",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares.",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "iphone 13",
@@ -24,123 +32,179 @@
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
     "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "iphone 12",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "iphone 11",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "iphone X",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "AirPods Gen 1",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "AirPods Gen 2",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "AirPods Gen 3",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "MacBook Air M1",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "MacBook Air M2",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "MacBook Pro",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "Serie SE",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "Ultra",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "Serie 8",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   },
   {
     "id": "Serie 9",
     "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
     "capacidad": "128GB, 256GB, 512GB",
     "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
-    "pantalla": "Pantalla Super Retina XDR,Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores), Pantalla OLED de 6.1 pulgadas (diagonal) sin marco, Resolución de 2556 x 1179 pixeles a 460 ppi,Dynamic Island, Pantalla HDR, True Tone, Amplia gama de colores (P3), Toque con respuesta háptica, Relación de contraste 2,000,000:1 (normal),Revestimiento oleofóbico resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
     "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
-    "camara": "Gran angular de 48 MP: 26 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, admite fotos en superalta resolución (24 MP y 48 MP), Ultra gran angular de 12 MP: 13 mm, apertura de ƒ/2.4 y ángulo de visión de 120°, Teleobjetivo de 2x de 12 MP (por medio del sensor quad pixel): 52 mm, apertura de ƒ/1.6, estabilización óptica de imagen por desplazamiento de sensor, 100% Focus Pixels, Zoom óptico de 2x para acercar, zoom óptico de 2x para alejar; rango de zoom óptico de 4x, Zoom digital de hasta 10x, Fotos panorámicas (hasta 63 MP), Modo Ráfaga, Retratos de última generación con Control de Enfoque y Control de Profundidad"
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   }
 ]

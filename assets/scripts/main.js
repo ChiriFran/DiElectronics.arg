@@ -312,13 +312,17 @@ function mostrarEspecificaciones(especificaciones, producto) {
       </div>
       <h4 class="especificacionesTitulo">Especificaciones</h4>
       <h3 class="especificacionesProducto">${producto.titulo}</h3>
-      <ul>
-        <li class="especificacionesAcabado">Acabado: ${especificaciones.acabado}</li>
-        <li class="especificacionesCapacidad">Capacidad: ${especificaciones.capacidad}</li>
-        <li class="especificacionesDimensiones">Dimensiones: ${especificaciones.dimensiones}</li>
-        <li class="especificacionesPantalla">Pantalla: ${especificaciones.pantalla}</li>
-        <li class="especificacionesChip">Chip: ${especificaciones.chip}</li>
-        <li class="especificacionesCamara">Cámara: ${especificaciones.camara}</li>
+      <ul class="especificaciones-lista">
+        <li class="especificaciones-item especificacionesAcabado"><strong>Acabado:</strong> ${especificaciones.acabado}</li>
+        <li class="especificaciones-item especificacionesCapacidad"><strong>Capacidad:</strong> ${especificaciones.capacidad}</li>
+        <li class="especificaciones-item especificacionesCamara"><strong>En la caja:</strong> ${especificaciones.caja}</li>
+        <li class="especificaciones-item especificacionesDimensiones"><strong>Dimensiones:</strong> ${especificaciones.dimensiones}</li>
+        <li class="especificaciones-item especificacionesPantalla"><strong>Pantalla:</strong> ${especificaciones.pantalla}</li>
+        <li class="especificaciones-item especificacionesChip"><strong>Chip:</strong> ${especificaciones.chip}</li>
+        <li class="especificaciones-item especificacionesCamara"><strong>Cámara:</strong> ${especificaciones.camara}</li>
+        <li class="especificaciones-item especificacionesDimensiones"><strong>Mag Safe:</strong> ${especificaciones.magsafe}</li>
+        <li class="especificaciones-item especificacionesPantalla"><strong>Tarjeta SIM:</strong> ${especificaciones.sim}</li>
+        <li class="especificaciones-item especificacionesChip"><strong>Requisitos ambientales:</strong> ${especificaciones.requisitosAmbientales}</li>
       </ul>
     </div>
   `;

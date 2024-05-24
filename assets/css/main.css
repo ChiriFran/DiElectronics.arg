@@ -180,6 +180,21 @@ main {
   justify-content: center;
 }
 
+#btnOrdenar {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+
+#filterArrow {
+  margin-right: 1rem;
+}
+
 #ordenar h3 {
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.6);
@@ -595,24 +610,18 @@ dialog::backdrop {
   margin-bottom: 0.5rem;
 }
 
-.especificacionesAcabado {
+.especificaciones-lista {
+  list-style-type: none;
+  padding: 0;
+}
+
+.especificaciones-item {
   margin-bottom: 0.5rem;
 }
 
-.especificacionesDimensiones {
-  margin-bottom: 0.5rem;
-}
-
-.especificacionesPantalla {
-  margin-bottom: 0.5rem;
-}
-
-.especificacionesChip {
-  margin-bottom: 0.5rem;
-}
-
-.especificacionesCamara {
-  margin-bottom: 0.5rem;
+.especificaciones-item strong {
+  display: block;
+  margin-bottom: 5px;
 }
 
 /** CARRITO **/
@@ -905,6 +914,115 @@ dialog::backdrop {
 
 /*** MEDIA QUERIES ***/
 
+@media screen and (max-width: 1450px) {
+  .filtersContainer {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: baseline;
+    padding: 0 0;
+    margin-bottom: 1rem;
+  }
+
+  #busqueda {
+    margin: 1rem 0;
+    order: 1;
+    font-weight: 500;
+  }
+
+  #ordenar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin: 0.3rem 0;
+    margin-bottom: 1rem;
+    order: 2;
+  }
+
+  #btnOrdenar {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0.5rem 0;
+  }
+
+  .btnAnimation {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 0;
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .filtersAnimation {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+    position: relative;
+    visibility: visible;
+  }
+
+  #filterArrow {
+    transition: 0.5s;
+  }
+
+  #ordenarAlfabeticamente {
+    margin: 0.5rem 0;
+  }
+
+  #ordenarPrecio {
+    margin-left: 0;
+  }
+
+  #ordenarPrecio {
+    margin-right: 0.5rem;
+  }
+
+  #ordenar h4 {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  #ordenarCategoriaMobile {
+    order: 3;
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .categoriasMobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+  }
+
+  .categoriasMobile li button {
+    border: 2px solid var(--clr-main-light);
+    color: var(--clr-main);
+    font-size: 0.8rem;
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 100%;
+    padding: 0.5rem 0.2rem !important;
+  }
+  .modal-content {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .contenedor-productos {
     grid-template-columns: 1fr 1fr 1fr;
@@ -912,12 +1030,9 @@ dialog::backdrop {
 }
 
 @media screen and (max-width: 675px) {
-  .contenedor-productos {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .logo {
     margin-top: 2rem;
     padding-right: 2rem;
@@ -967,15 +1082,6 @@ dialog::backdrop {
   .titulo-principal {
     margin-bottom: 1rem;
     color: rgba(0, 0, 0, 0.8);
-  }
-
-  .filtersContainer {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    align-items: baseline;
-    padding: 0 0;
-    margin-bottom: 1rem;
   }
 
   #busqueda {
