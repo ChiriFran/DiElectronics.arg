@@ -662,8 +662,7 @@ header {
 }
 
 #nuevosLanzamientosSlider h2 {
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
-  margin: 2rem 0;
+  display: none;
 }
 
 .slider-container-new {
