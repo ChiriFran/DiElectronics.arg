@@ -157,10 +157,6 @@ header {
   text-decoration: none;
 }
 
-.iconInicio{
-  width: 33px;
-}
-
 .navList {
   display: flex;
   align-items: center;
@@ -418,12 +414,9 @@ header {
   right: 20px;
 }
 
-.prevIconImg{
-  width: 22px;
-}
-
-.nextIconImg{
-  width: 22px;
+.brandImg {
+  max-width: 200px;
+  width: 100%;
 }
 
 /* ACERCA DI ELECTRONICS CTA */
@@ -589,11 +582,6 @@ header {
 
 .container .glass:hover {
   animation: myAnimHoverCards 0.5s ease 0s 1 normal forwards;
-}
-
-.brandImg{
-  max-width: 200px;
-  width: 100%;
 }
 
 @keyframes myAnimHoverCards {

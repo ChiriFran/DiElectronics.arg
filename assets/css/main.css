@@ -3,7 +3,7 @@
 :root {
   --clr-main: #0e0700;
   --clr-main-light: #ababab7b;
-  --clr-white: #fff;
+  --clr-white: #ededf2;
   --clr-gray: #bbbfd3;
   --clr-red: #b01818;
 }
@@ -61,6 +61,7 @@ aside {
   font-size: 1.3rem;
   font-family: sans-serif;
   margin-bottom: 2rem;
+  color: var(--clr-white);
 }
 
 .menu {

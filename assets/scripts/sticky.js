@@ -24,16 +24,16 @@ function applyStickyStyles(isSticky) {
 
   const underlineHovers = document.querySelectorAll(".underlined-hover");
   underlineHovers.forEach((underlineHover) => {
-    underlineHover.style.setProperty("--colorFont", isSticky ? "#fff" : "#000");
+    underlineHover.style.setProperty("--colorFont", isSticky ? "#ededf2" : "#0e0700");
   });
 
   // Cambiar dinámicamente los estilos del botón según el estado sticky
   if (isSticky) {
-    botonAbrirModalNav.style.color = "#fff";
+    botonAbrirModalNav.style.color = "#ededf2";
     botonAbrirModalNav.style.backgroundColor = "#0e0700";
   } else {
     botonAbrirModalNav.style.color = "#0e0700"; // Restablecer a valor predeterminado
-    botonAbrirModalNav.style.backgroundColor = "#fff"; // Restablecer a valor predeterminado
+    botonAbrirModalNav.style.backgroundColor = "#ededf2"; // Restablecer a valor predeterminado
   }
 }
 
