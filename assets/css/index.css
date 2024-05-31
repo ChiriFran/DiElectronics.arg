@@ -157,6 +157,10 @@ header {
   text-decoration: none;
 }
 
+.iconInicio{
+  width: 33px;
+}
+
 .navList {
   display: flex;
   align-items: center;
@@ -414,6 +418,14 @@ header {
   right: 20px;
 }
 
+.prevIconImg{
+  width: 22px;
+}
+
+.nextIconImg{
+  width: 22px;
+}
+
 /* ACERCA DI ELECTRONICS CTA */
 
 #acercaDiElectronics {
@@ -439,22 +451,22 @@ header {
   box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
 
-#acercaContainerWidth {
+.acercaContainerWidth {
   width: 80%;
 }
 
-#acercaContainerWidth h3 {
+.acercaContainerWidth h3 {
   font-size: clamp(1.5rem, 2vw, 2rem);
   margin: 1rem 0;
   font-weight: 500;
 }
 
-#acercaContainerWidth h2 {
+.acercaContainerWidth h2 {
   font-size: clamp(1.8rem, 4vw, 3rem);
   margin: 1.5rem 0;
 }
 
-#acercaContainerWidth button {
+.acercaContainerWidth button {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -468,12 +480,12 @@ header {
   font-family: inherit;
 }
 
-#acercaContainerWidth button.learn-more {
+.acercaContainerWidth button.learn-more {
   width: 12rem;
   height: auto;
 }
 
-#acercaContainerWidth button.learn-more .circle {
+.acercaContainerWidth button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -484,7 +496,7 @@ header {
   border-radius: 1.625rem;
 }
 
-#acercaContainerWidth button.learn-more .circle .icon {
+.acercaContainerWidth button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -493,7 +505,7 @@ header {
   background: var(--colorBase);
 }
 
-#acercaContainerWidth button.learn-more .circle .icon.arrow {
+.acercaContainerWidth button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
@@ -501,7 +513,7 @@ header {
   background: none;
 }
 
-#acercaContainerWidth button.learn-more .circle .icon.arrow::before {
+.acercaContainerWidth button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -513,7 +525,7 @@ header {
   transform: rotate(45deg);
 }
 
-#acercaContainerWidth button.learn-more .button-text {
+.acercaContainerWidth button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -529,16 +541,16 @@ header {
   text-transform: uppercase;
 }
 
-#acercaContainerWidth button:hover .circle {
+.acercaContainerWidth button:hover .circle {
   width: 100%;
 }
 
-#acercaContainerWidth button:hover .circle .icon.arrow {
+.acercaContainerWidth button:hover .circle .icon.arrow {
   background: var(--colorBase);
   transform: translate(1rem, 0);
 }
 
-#acercaContainerWidth button:hover .button-text {
+.acercaContainerWidth button:hover .button-text {
   color: var(--colorBase);
 }
 
@@ -577,6 +589,11 @@ header {
 
 .container .glass:hover {
   animation: myAnimHoverCards 0.5s ease 0s 1 normal forwards;
+}
+
+.brandImg{
+  max-width: 200px;
+  width: 100%;
 }
 
 @keyframes myAnimHoverCards {
