@@ -5,7 +5,7 @@
 }
 
 :root {
-  --colorBase: #fff;
+  --colorBase: #ededf2;
   --colorPrimary: #ababab7b;
   --colorFont: #0e0700;
   --fontFamily: "Bebas Neue";
@@ -410,8 +410,16 @@ header {
   left: 20px;
 }
 
+.prevIconImg{
+  width: 33px;
+}
+
 .next-hero {
   right: 20px;
+}
+
+.nextIconImg{
+  width: 33px;
 }
 
 .brandImg {
