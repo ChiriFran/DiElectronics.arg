@@ -92,74 +92,6 @@
           <h2 class="titulo-principal" id="titulo-principal">
             Todos los productos
           </h2>
-        </section>
-
-        <section class="filtersContainer">
-          <section id="ordenar">
-            <section id="btnOrdenar">
-              <h3 id="showFilters">Filtrar</h3>
-              <img
-                id="filterArrow"
-                src="./assets/img/icons/flechaAbajo.svg"
-                width="16px"
-                alt=""
-              />
-            </section>
-
-            <section id="ordenarAlfabeticamente" class="btnAnimation">
-              <h4>Alfabeticamente:</h4>
-              <button id="ordenar-nombre-az" class="btnOrdenar">
-                <img src="assets/img/icons/ordenar-z-a.svg" alt="" />
-              </button>
-              <button id="ordenar-nombre-za" class="btnOrdenar">
-                <img src="assets/img/icons/ordenar-a-z.svg" alt="" />
-              </button>
-            </section>
-
-            <section id="ordenarPrecio" class="btnAnimation">
-              <h4>Precio:</h4>
-              <button id="ordenar-ascendente" class="btnOrdenar">
-                <img src="assets/img/icons/ordenar-1-9.svg" alt="" />
-              </button>
-              <button id="ordenar-descendente" class="btnOrdenar">
-                <img src="assets/img/icons/ordenar-9-1.svg" alt="" />
-              </button>
-            </section>
-
-            <section id="ordenarCategoriaMobile" class="btnAnimation">
-              <ul class="categoriasMobile">
-                <li>
-                  <button id="todos" class="boton-categoria">Todo</button>
-                </li>
-                <li>
-                  <button id="topSale" class="boton-categoria">
-                    Lo mas vendido
-                  </button>
-                </li>
-                <li>
-                  <button id="celulares" class="boton-categoria padding">
-                    Celulares
-                  </button>
-                </li>
-                <li>
-                  <button id="auriculares" class="boton-categoria padding">
-                    Auriculares
-                  </button>
-                </li>
-                <li>
-                  <button id="computadoras" class="boton-categoria padding">
-                    Computadoras
-                  </button>
-                </li>
-                <li>
-                  <button id="relojes" class="boton-categoria padding">
-                    Relojes
-                  </button>
-                </li>
-              </ul>
-            </section>
-          </section>
-
           <section id="busqueda">
             <h4>Buscar:</h4>
             <input
@@ -169,8 +101,33 @@
               autocomplete="off"
             />
             <img src="assets/img/icons/buscar.svg" id="lupaImg" alt="" />
+
+            <button id="botonAbrirModal">Filtros</button>
           </section>
         </section>
+        <dialog id="modalContainer">
+          <div id="modal">
+            <button id="botonCerrarModal">
+              <img
+                src="./assets/img/icons/volver.svg"
+                alt="Cerrar ventana emergente"
+              />
+            </button>  
+              <button id="ordenar-nombre-az" class="btnOrdenar">
+                <p>Alfabeticamente Z-A</p>
+              </button>
+              <button id="ordenar-nombre-za" class="btnOrdenar">
+                <p>Alfabeticamente A-Z</p>
+              </button>
+
+              <button id="ordenar-ascendente" class="btnOrdenar">
+                <p>Alfabeticamente 1-9</p>
+              </button>
+              <button id="ordenar-descendente" class="btnOrdenar">
+                <p>Alfabeticamente 9-1</p>
+              </button>
+          </div>
+        </dialog>
 
         <div id="contenedor-productos" class="contenedor-productos">
           <!-- Esto se va a rellenar con JS -->
@@ -188,5 +145,6 @@
     <script src="assets/scripts/main.js"></script>
     <script src="assets/scripts/menu.js"></script>
     <script src="assets/scripts/cotizacion.js"></script>
+    <script src="assets/scripts/dialogFilters.js"></script>
   </body>
 </html>
