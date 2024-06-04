@@ -951,6 +951,10 @@ main {
     padding: 0.5rem 0;
   }
 
+  #botonAbrirModal{
+    padding: 0.5rem 0;
+  }
+
 
   .modal-content {
     width: 80%;
@@ -968,6 +972,9 @@ main {
   .logo {
     margin-top: 2rem;
     padding-right: 2rem;
+  }
+  .logo a{
+    color: var(--clr-white);
   }
   .wrapper {
     min-height: 100vh;
