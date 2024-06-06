@@ -9,11 +9,11 @@ function applyStickyStyles(isSticky) {
   const botonAbrirModalNav = document.querySelector(".botonAbrirModalNav");
   const iconNavBarMobile = document.getElementById("navBarMobile");
   const iconNavBarMobileTitle = document.getElementById("navBarMobileTitle");
+  const iconInicio = document.querySelector(".iconInicio");
+  const iconCarrito = document.querySelector(".iconCarrito");
 
   nav.classList.toggle("sticky", isSticky);
-
   headerTitle.classList.toggle("headerSticky", isSticky);
-
   iconNavBarMobile.classList.toggle("mobileSticky", isSticky);
 
   const visibility = isSticky ? "visible" : "hidden";
@@ -29,11 +29,15 @@ function applyStickyStyles(isSticky) {
 
   // Cambiar dinámicamente los estilos del botón según el estado sticky
   if (isSticky) {
-    botonAbrirModalNav.style.color = "#ededf2";
+    botonAbrirModalNav.style.color = "#dadadd";
     botonAbrirModalNav.style.backgroundColor = "#0e0700";
+    iconInicio.src = "assets/img/icons/inicioVacioBlanco.svg"; 
+    iconCarrito.src = "assets/img/icons/cart-white.svg"; 
   } else {
-    botonAbrirModalNav.style.color = "#0e0700"; // Restablecer a valor predeterminado
-    botonAbrirModalNav.style.backgroundColor = "#ededf2"; // Restablecer a valor predeterminado
+    botonAbrirModalNav.style.color = "#0e0700"; 
+    botonAbrirModalNav.style.backgroundColor = "#dadadd";
+    iconInicio.src = "assets/img/icons/inicioVacio.svg"; 
+    iconCarrito.src = "assets/img/icons/cart-black.svg"; 
   }
 }
 
