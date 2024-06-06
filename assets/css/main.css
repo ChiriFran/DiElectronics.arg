@@ -177,7 +177,10 @@ main {
 
 #modalContainer{
   margin: 2rem 2rem;
+  margin-bottom: auto;
   margin-left: auto;
+  border: none;
+  border-radius: 0.1rem;
   background-color: var(--clr-white);
   animation: filterModalAnimation .5s ease-in-out;
 }
@@ -200,17 +203,20 @@ main {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 1rem;
+  padding: 0.5rem 0.5rem;
 }
 
 #modal p{
-  padding: 0.2rem 1rem;
+  padding: 0.3rem 1rem;
+  border-bottom: 2px solid rgb(112, 112, 112);
 }
 
 #botonCerrarModal{
   border: none;
   background-color: var(--clr-main-light);
-  border-radius: 0.5rem;
+  border-radius: 0.1rem;
+  margin-left: auto;
+  margin-bottom: 1rem;
 }
 
 #botonCerrarModal img{
@@ -536,7 +542,7 @@ main {
 }
 
 .modal {
-  display: none;
+  display: none; /* Mantiene el modal oculto inicialmente */
   position: fixed;
   z-index: 1;
   left: 0;
@@ -553,6 +559,14 @@ main {
   padding: 2rem 2rem;
   border-radius: 0.1rem;
   width: 60%;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.modal.show .modal-content {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .close {
@@ -624,6 +638,29 @@ main {
   display: block;
   margin-bottom: 5px;
 }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+.modal.fade-out .modal-content {
+  animation: fadeOut 0.5s forwards, slideOut 0.5s forwards;
+}
+
 
 /** CARRITO **/
 
@@ -1040,18 +1077,6 @@ main {
     margin: 0.5rem 0.5rem;
     margin-left: auto;
     background-color: var(--clr-white);
-    animation: filterModalAnimationMobile .5s ease-in-out;
-  }
-  
-  @keyframes filterModalAnimationMobile {
-    0%{
-      opacity: 0;
-      transform: translateX(20px);
-    }
-    100%{
-      opacity: 1;
-      transform: translateX(0);
-    }
   }
 
   .contenedor-productos {

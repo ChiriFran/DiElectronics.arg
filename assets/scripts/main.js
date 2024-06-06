@@ -277,7 +277,7 @@ function mostrarEspecificaciones(especificaciones, producto) {
 
   const modal = document.createElement("div");
   modal.classList.add("modal");
-  modal.setAttribute("id", `modal-${producto.id}`); // Agregar un id único al modal
+  modal.setAttribute("id", `modal-${producto.id}`);
   modal.innerHTML = `
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -310,12 +310,18 @@ function mostrarEspecificaciones(especificaciones, producto) {
 
   const closeButton = modal.querySelector(".close");
   closeButton.addEventListener("click", () => {
-    modal.style.display = "none";
+    modal.classList.add("fade-out");
+    setTimeout(() => {
+      document.body.removeChild(modal);
+    }, 500); // Match the duration of the fade-out animation
   });
 
   window.addEventListener("click", (event) => {
     if (event.target === modal) {
-      modal.style.display = "none";
+      modal.classList.add("fade-out");
+      setTimeout(() => {
+        document.body.removeChild(modal);
+      }, 400); // Match the duration of the fade-out animation
     }
   });
 
@@ -324,15 +330,15 @@ function mostrarEspecificaciones(especificaciones, producto) {
     const idProducto = e.currentTarget.dataset.id;
     agregarAlCarrito(idProducto);
 
-    // Actualizar la cantidad en el modal correspondiente
     const cantidadEnCarrito = obtenerCantidadEnCarrito(idProducto);
-    const cantidadElement = modal.querySelector(
-      ".producto-modal-cantidad-en-carrito"
-    ); // Selección específica del modal
+    const cantidadElement = modal.querySelector(".producto-modal-cantidad-en-carrito");
     if (cantidadElement) {
       cantidadElement.innerText = `Unidad/es en carrito: ${cantidadEnCarrito}`;
     }
   });
 
   modal.style.display = "block";
+  setTimeout(() => {
+    modal.classList.add("show");
+  }, 10); // Delay to ensure the transition applies
 }
