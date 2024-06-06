@@ -907,6 +907,7 @@ footer nav ul li:hover {
   width: 36px;
   margin-right: 10px;
   border-radius: 100%;
+  filter: brightness(0.5);
 }
 
 .payment {
