@@ -798,7 +798,7 @@ header {
 
 footer {
   background-color: var(--colorFont);
-  color: var(--colorBase);
+  color: var(--colorPrimary);
   padding: 2rem 2rem;
   width: 100%;
   display: flex;
@@ -858,7 +858,7 @@ footer nav ul li {
 }
 
 footer nav ul li a {
-  color: var(--colorBase);
+  color: var(--colorPrimary);
   text-decoration: none;
   padding: 0.5rem 2rem;
 }
@@ -877,7 +877,7 @@ footer nav ul li:hover {
 
 .footer-midle-info a {
   text-decoration: none;
-  color: var(--colorBase);
+  color: var(--colorPrimary);
 }
 
 .footer-midle-info a:hover {
@@ -970,14 +970,17 @@ dialog::backdrop {
 .botonAbrirModal {
   border: none;
   background-color: var(--colorFont);
-  color: var(--colorBase);
+  color: var(--colorPrimary);
   display: flex;
   flex-flow: column;
   margin: 0.5rem 0;
+  transition: 0.4s;
 }
 
 .botonAbrirModal:hover {
   text-decoration: underline;
+  color: var(--colorBase);
+  transition: 0.2s;
 }
 
 .modal {

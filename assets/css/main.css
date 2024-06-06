@@ -209,12 +209,10 @@ main {
 
 #modal button{
   width: 100%;
-}
-
-#modal p{
   padding: 0.5rem 1rem 0.2rem;
   border-bottom: 2px solid rgb(112, 112, 112);
 }
+
 
 #botonCerrarModal{
   border: none;
@@ -227,19 +225,6 @@ main {
 #botonCerrarModal img{
   width: 26px;
   height: 26px;
-}
-
-#ordenar {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
-}
-
-#ordenar h3 {
-  font-size: 1.1rem;
-  color: rgba(0, 0, 0, 0.6);
-  margin-right: 1rem;
 }
 
 .btnOrdenar {
@@ -972,17 +957,7 @@ main {
     order: 1;
     font-weight: 500;
   }
-
-  #ordenar {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: baseline;
-    justify-content: flex-start;
-    margin: 0.3rem 0;
-    margin-bottom: 1rem;
-    order: 2;
-  }
-
+  
   #btnOrdenar {
     display: flex;
     flex-flow: row;
