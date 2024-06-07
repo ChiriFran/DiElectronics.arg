@@ -321,7 +321,7 @@ function mostrarEspecificaciones(especificaciones, producto) {
       modal.classList.add("fade-out");
       setTimeout(() => {
         document.body.removeChild(modal);
-      }, 400); // Match the duration of the fade-out animation
+      }, 500); // Match the duration of the fade-out animation
     }
   });
 
@@ -340,5 +340,5 @@ function mostrarEspecificaciones(especificaciones, producto) {
   modal.style.display = "block";
   setTimeout(() => {
     modal.classList.add("show");
-  }, 10); // Delay to ensure the transition applies
+  }, 20); // Delay to ensure the transition applies
 }

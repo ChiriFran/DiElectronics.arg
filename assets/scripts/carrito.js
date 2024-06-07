@@ -181,6 +181,13 @@ function comprarCarrito() {
             </div>
         </div>
 
+        <div class="reciboBotonWspContainer">
+          <p class="compartirRecibo">Comparte el comprobante con el vendedor para coordinar medios de pago y entrega lo antes posible.<p/>
+          <div class="botonWsp">
+            <a href="https://wa.me/541130504515" target="_blank"><img src="assets/img/icons/whatsApp.svg"><img>¡Realizar pedido!</a>
+          </div>
+        </div>
+
         <div class="reciboFooter">
           <h4 class ="reciboFooterTitle">Este comprabante es un pedido de compra no un comprobante de pago.</h4>
           <h4 class ="reciboFooterName"> - dielectronics.arg - </h4>
@@ -192,7 +199,7 @@ function comprarCarrito() {
 
   // Modificar el texto en el elemento con el id "carrito-vacio"
   contenedorCarritoVacio.innerText =
-    "¡Excelente! Tu orden de compra ha sido generada (consulta tus descargas).\nComparte el comprobante con el vendedor para coordinar medios de pago y entrega lo antes posible.";
+    "¡Excelente! Tu orden de compra ha sido generada (consulta tus descargas).";
 
   // Vaciar el carrito y guardar en el almacenamiento local después de generar el recibo
   productosEnCarrito.length = 0;

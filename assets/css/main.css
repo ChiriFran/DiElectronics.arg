@@ -654,6 +654,10 @@ main {
 
 /** CARRITO **/
 
+header h1 a{
+  color: var(--clr-white);
+}
+
 .contenedor-carrito {
   display: flex;
   flex-direction: column;
@@ -921,6 +925,42 @@ main {
   color: var(--clr-mainite);
   border-radius: 0 0 1rem 1rem;
   margin-bottom: 1rem;
+}
+
+.reciboBotonWspContainer{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.compartirRecibo{
+  font-size: 1rem;
+}
+
+.botonWsp{
+  padding: 0.5rem 2rem;
+  background-color: #22b357;
+  border-radius: 0.2rem;
+  color: var(--clr-white);
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+.botonWsp a{
+  text-decoration: none;
+  color: var(--clr-white);
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.botonWsp a img{
+  padding: 0 0.2rem;
 }
 
 .reciboFooter {
