@@ -21,7 +21,7 @@ botonesCerrar.forEach((botonCerrar) => {
   botonCerrar.addEventListener("click", () => {
     const modal = botonCerrar.closest(".modalContainer, .modalContainerNav"); // Buscar el modal padre del botón de cerrar
     if (modal) {
-      modal.style.animation = "myAnim 1s forwards";
+      modal.style.animation = "myAnim 0.4s forwards";
       setTimeout(function () {
         modal.close();
         modal.style.animation = "";
@@ -41,7 +41,7 @@ modals.forEach((modal) => {
       e.clientY < dialogDimensions.top ||
       e.clientY > dialogDimensions.bottom
     ) {
-      modal.style.animation = "myAnim 1s forwards";
+      modal.style.animation = "myAnim 0.7s forwards";
       setTimeout(function () {
         modal.close();
         modal.style.animation = "";
