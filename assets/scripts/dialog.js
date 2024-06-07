@@ -12,6 +12,11 @@ botonesAbrir.forEach((botonAbrir, index) => {
     if (modal) {
       modal.showModal();
       document.body.style.overflow = "hidden";
+
+      // Restablecer la animación para los modales de navegación
+      if (modal.classList.contains("modalContainerNav")) {
+        modal.style.animation = "myAnimDialogNav 0.6s ease forwards";
+      }
     }
   });
 });
@@ -41,7 +46,7 @@ modals.forEach((modal) => {
       e.clientY < dialogDimensions.top ||
       e.clientY > dialogDimensions.bottom
     ) {
-      modal.style.animation = "myAnim 0.7s forwards";
+      modal.style.animation = "myAnim 0.5s forwards";
       setTimeout(function () {
         modal.close();
         modal.style.animation = "";
@@ -51,10 +56,9 @@ modals.forEach((modal) => {
   });
 });
 
-// Añadir clase .modalNav a los modals de navegación y eliminar animaciones
+// Añadir clase .modalNav a los modals de navegación
 modals.forEach((modal) => {
   if (modal.classList.contains("modalContainerNav")) {
     modal.classList.add("modalNav");
-    modal.style.animation = "none"; // Eliminar animaciones
   }
 });

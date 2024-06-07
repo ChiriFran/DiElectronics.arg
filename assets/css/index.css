@@ -219,14 +219,15 @@ header {
   letter-spacing: 3px;
   padding: 0.8rem 1rem;
   margin: 0 0.5rem;
-  transition: 0.3s;
 }
 
 .modalNav {
   width: 80% !important;
   height: 250vh !important;
   margin: auto auto;
-  animation: myAnimDialogNav 1s ease 0s 1 normal forwards;
+  animation: myAnimDialogNav 0.6s ease forwards;
+  border: none;
+  border-radius: 0.2rem;
 }
 
 @keyframes myAnimDialogNav {
@@ -964,6 +965,8 @@ dialog::backdrop {
   justify-content: center;
   width: 100%;
   height: 100%;
+  border: none;
+  border-radius: 0.2rem;
 }
 
 #modalLogo {
