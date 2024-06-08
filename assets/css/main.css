@@ -529,6 +529,7 @@ main {
   font-size: clamp(0.8rem, 2vw, 1rem);
   padding: 0.3rem 0;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .modal {

@@ -206,5 +206,18 @@
     "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
     "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
     "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
+  },
+  {
+    "id": "Ipad Pro",
+    "acabado": "Negro, Azul, Verde, Amarrillo, Rosa",
+    "capacidad": "128GB, 256GB, 512GB",
+    "dimensiones": "Ancho: 71.6mm Alto: 147.6mm Grosor: 7.8mm Peso: 171g",
+    "pantalla": "Pantalla Super Retina XDR, toque con respuesta háptica, resistente a huellas dactilares, Compatibilidad para mostrar varios idiomas y caracteres simultáneamente ",
+    "chip": "Chip A16 Bionic, CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia, GPU de 5 núcleos, Neural Engine de 16 núcleos",
+    "camara": "Gran angular de 48 MP: 26 mm, admite fotos en superalta resolución (24 MP y 48 MP), estabilización óptica de imagen por desplazamiento de sensor, modo Ráfaga, retratos de última generación con Control de Enfoque y Control de Profundidad",
+    "magsafe": "Carga inalámbrica de hasta 15 W11, anillo magnético, imán de alineación, identificación de accesorios mediante NFC, magnetómetro",
+    "sim": "Compatibilidad con doble eSIM, doble SIM (nano-SIM y eSIM)",
+    "requisitosAmbientales": "Temperatura operativa: 0 a 35 °C, temperatura no operativa: -20 a 45 °C, humedad relativa: 5% a 95% sin condensación, altitud de funcionamiento: probado hasta 3,000 m",
+    "caja": "Dispositivo, cable de carga USB-C (1 m), documentación"
   }
 ]

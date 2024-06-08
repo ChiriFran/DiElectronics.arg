@@ -163,5 +163,16 @@
     },
     "precio": 400,
     "estado": "topSale"
+  },
+  {
+    "id": "tablet-01",
+    "titulo": "Ipad Pro",
+    "imagen": "assets/img/tienda/tablets/ipad-pro-11.jpeg",
+    "categoria": {
+      "nombre": "Tablets",
+      "id": "tablets"
+    },
+    "precio": 1000,
+    "estado": "topSale"
   }
 ]
