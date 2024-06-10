@@ -226,6 +226,7 @@ header {
   height: 250vh !important;
   margin: auto auto;
   animation: myAnimDialogNav 0.6s ease forwards;
+  background-color: var(--colorBase);
   border: none;
   border-radius: 0.2rem;
 }
@@ -360,12 +361,13 @@ header {
 .contactoOpciones h3 {
   color: var(--colorBase) !important;
   font-size: 1.5rem !important;
-  margin: 2rem 0;
+  margin: 1rem 0 !important;
+  letter-spacing: 1px;
 }
 
 .contactoOpciones ul li {
-  list-style: none;
   text-align: start;
+  list-style: circle;
 }
 
 .contactoOpciones h2 {
@@ -382,7 +384,7 @@ header {
   padding: 32px 24px;
   font-size: 14px;
   font-family: inherit;
-  color: rgb(208, 208, 208) ;
+  color: var(--colorBase) ;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -392,6 +394,8 @@ header {
 
 .form-container h3{
   color: var(--colorBase) !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 1px;
 }
 
 .form-container button:active {
@@ -1490,6 +1494,24 @@ dialog::backdrop {
     order: 1;
     padding: 0.3rem 5rem;
     font-size: 1.8rem;
+  }
+
+  .modalContacto{
+    height: auto;
+  }
+
+  #formContacto {
+    width: 100%;
+    height: auto ;
+    flex-flow: column;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .contactoOpciones{
+    padding: 0 1rem;
   }
 
   #acercaDiElectronics {
