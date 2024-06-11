@@ -7,6 +7,7 @@ function applyStickyStyles(isSticky) {
   const nav = document.querySelector(".nav");
   const headerTitle = document.querySelector(".headerTitle");
   const botonAbrirModalNav = document.querySelector(".botonAbrirModalNav");
+  const botonAbrirModalNavContacto = document.querySelector(".botonAbrirModalNavContacto");
   const iconNavBarMobile = document.getElementById("navBarMobile");
   const iconNavBarMobileTitle = document.getElementById("navBarMobileTitle");
   const iconInicio = document.querySelector(".iconInicio");
@@ -27,15 +28,19 @@ function applyStickyStyles(isSticky) {
     underlineHover.style.setProperty("--colorFont", isSticky ? "#ededf2" : "#0e0700");
   });
 
-  // Cambiar dinámicamente los estilos del botón según el estado sticky
+  function aplicarEstilosBoton(boton, color, colorDeFondo) {
+    boton.style.color = color;
+    boton.style.backgroundColor = colorDeFondo;
+  }
+
   if (isSticky) {
-    botonAbrirModalNav.style.color = "#dadadd";
-    botonAbrirModalNav.style.backgroundColor = "#0e0700";
+    aplicarEstilosBoton(botonAbrirModalNav, "#dadadd", "#0e0700");
+    aplicarEstilosBoton(botonAbrirModalNavContacto, "#dadadd", "#0e0700");
     iconInicio.src = "assets/img/icons/inicioVacioBlanco.svg"; 
     iconCarrito.src = "assets/img/icons/cart-white.svg"; 
   } else {
-    botonAbrirModalNav.style.color = "#0e0700"; 
-    botonAbrirModalNav.style.backgroundColor = "#dadadd";
+    aplicarEstilosBoton(botonAbrirModalNav, "#0e0700", "#dadadd");
+    aplicarEstilosBoton(botonAbrirModalNavContacto, "#0e0700", "#dadadd");
     iconInicio.src = "assets/img/icons/inicioVacio.svg"; 
     iconCarrito.src = "assets/img/icons/cart-black.svg"; 
   }

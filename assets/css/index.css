@@ -222,8 +222,8 @@ header {
 }
 
 .modalNav {
-  width: 60% !important;
-  height: 250vh !important;
+  width: 60%;
+  height: 90vh;
   margin: auto auto;
   animation: myAnimDialogNav 0.6s ease forwards;
   background-color: var(--colorBase);
@@ -338,10 +338,10 @@ header {
 /* contacto form */
 #formContacto {
   width: 100%;
-  height: 85vh;
+  height: 90vh;
   display: flex;
   flex-flow: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   background-image: url(../img/hero/renovate-black.png);
   background-repeat: no-repeat;
@@ -360,7 +360,7 @@ header {
 
 .contactoOpciones h3 {
   color: var(--colorBase) !important;
-  font-size: 1.5rem !important;
+  font-size: 1.4rem !important;
   margin: 1rem 0 !important;
   letter-spacing: 1px;
 }
@@ -372,8 +372,9 @@ header {
 
 .contactoOpciones h2 {
   color: var(--colorBase) !important;
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
   font-weight: 500;
+  margin: 0.4rem !important;
 }
 
 .form-container {
@@ -458,103 +459,14 @@ header {
   border-color: var(--colorBase);
 }
 
-.btn-53,
-.btn-53 *,
-.btn-53 :after,
-.btn-53 :before,
-.btn-53:after,
-.btn-53:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-
-.btn-53 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: var(--colorFont); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for depth */
-  box-shadow: 0 0 20px rgba(234, 234, 234, 0.7); /* Sun color glow */
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: ui-sans-serif, sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5;
-  margin: 0;
-  padding: 1.2rem 3rem;
-  position: relative;
-  text-transform: uppercase;
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.btn-53 .original {
-  background: #ffffff61;
-  color: #fff;
-  display: grid;
-  place-content: center;
-  position: absolute;
-  inset: 0;
-  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
-}
-
-.btn-53 .letters {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  position: relative;
-}
-
-.btn-53 span {
-  opacity: 0;
-  transition: opacity 0.2s, transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
-  transition-delay: 0.1s;
-}
-
-.btn-53:hover .original,
-.btn-53:hover span {
-  transform: translateY(100%);
-}
-
-.btn-53:hover .letters span {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Additional CSS for spinning "U" */
-.btn-53 span:first-child {
-  display: inline-block;
-  transition: transform 0.5s ease-in-out;
-}
-
-.btn-53:hover span:first-child {
-  transform: rotate(360deg); /* Spin the "U" */
-}
-
-/* Adjusting nth-child delays for sequential appearance */
-.btn-53:hover span:nth-child(1) {
-  transition-delay: 0.1s;
-}
-.btn-53:hover span:nth-child(2) {
-  transition-delay: 0.2s;
-}
-.btn-53:hover span:nth-child(3) {
-  transition-delay: 0.3s;
-}
-.btn-53:hover span:nth-child(4) {
-  transition-delay: 0.4s;
-}
-.btn-53:hover span:nth-child(5) {
-  transition-delay: 0.5s;
-}
-.btn-53:hover span:nth-child(6) {
-  transition-delay: 0.6s;
-}
-.btn-53:hover span:nth-child(7) {
-  transition-delay: 0.7s;
+.btn-enviar{
+  border: 1px solid var(--colorBase);
+  border-radius: 0.3rem;
+  background-color: #ffffff30;
+  color: var(--colorBase);
+  letter-spacing: 1px;
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
 }
 
 /* HERO */
@@ -1461,8 +1373,7 @@ dialog::backdrop {
   }
 
   .modalNav {
-    width: 90% !important;
-    height: 100vh !important;
+    width: 85%;
   }
 
   .familiaParent {
@@ -1512,6 +1423,16 @@ dialog::backdrop {
 
   .contactoOpciones{
     padding: 0 1rem;
+  }
+
+  .contactoOpciones h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .contactoOpciones h2 {
+    font-size: 1rem;
+    margin: 0.4rem 0;
   }
 
   #acercaDiElectronics {
