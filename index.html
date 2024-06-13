@@ -143,42 +143,23 @@
             </div>
             <div class="form-container">
               <h3>CONTACTO</h3>
-              <form class="form" id="form">
+              <form class="form" id="form" onsubmit="sendEmail(event)">
                 <div class="form-group">
                   <label for="nombre">Nombre: </label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    autocomplete="off"
-                    required=""
-                  >
+                  <input type="text" id="nombre" name="nombre" autocomplete="off" required="">
                 </div>
                 <div class="form-group">
                   <label for="email">Email: </label>
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    autocomplete="off"
-                    required=""
-                  >
+                  <input type="email" id="email" name="email" autocomplete="off" required="">
                 </div>
                 <div class="form-group">
                   <label for="textarea">¿Cómo te podemos ayudar?</label>
-                  <textarea
-                    name="textarea"
-                    id="textarea"
-                    rows="10"
-                    cols="50"
-                    autocomplete="off"
-                    required=""
-                  ></textarea>
+                  <textarea name="textarea" id="textarea" rows="10" cols="50" autocomplete="off" required=""></textarea>
                 </div>
-                
-                <button class="btn-enviar">
-                  Enviar
-                </button>
+                <button type="submit" class="btn-enviar">Enviar</button>
+                <div id="status-container">
+                  <p id="status-message" class="hidden"></p>
+                </div>
               </form>
             </div>
           </div>
@@ -646,5 +627,7 @@
     <script src="./assets/scripts/scrollCards.js"></script>
     <script src="./assets/scripts/nuevoLanzamientosSlider.js"></script>
     <script src="./assets/scripts/dialog.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./assets/scripts/emailJsForm.js"></script>
   </body>
 </html>
