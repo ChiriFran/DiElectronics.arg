@@ -166,7 +166,7 @@ main {
   justify-content: space-between;
 }
 
-#botonAbrirModal{
+#botonAbrirModal {
   border: none;
   padding: 0.2rem 0.5rem;
   cursor: pointer;
@@ -176,30 +176,28 @@ main {
   background-color: #dadadd;
 }
 
-
-#modalContainer{
+#modalContainer {
   margin: 2rem 2rem;
   margin-bottom: auto;
   margin-left: auto;
   border: none;
   border-radius: 0.1rem;
   background-color: var(--clr-white);
-  animation: filterModalAnimation .5s ease-in-out;
+  animation: filterModalAnimation 0.5s ease-in-out;
 }
 
 @keyframes filterModalAnimation {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(-50px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-
-#modal{
+#modal {
   display: flex;
   width: 100%;
   flex-flow: column;
@@ -208,14 +206,13 @@ main {
   padding: 0.5rem 0.5rem;
 }
 
-#modal button{
+#modal button {
   width: 100%;
   padding: 0.5rem 1rem 0.2rem;
   border-bottom: 2px solid rgb(112, 112, 112);
 }
 
-
-#botonCerrarModal{
+#botonCerrarModal {
   border: none;
   background-color: var(--clr-main-light);
   border-radius: 0.1rem;
@@ -223,7 +220,7 @@ main {
   margin-bottom: 1rem;
 }
 
-#botonCerrarModal img{
+#botonCerrarModal img {
   width: 26px;
   height: 26px;
 }
@@ -275,8 +272,16 @@ main {
   gap: 1rem;
 }
 
+.producto-imagen-container {
+  display: flex;
+  flex-flow: column;
+  width: 250px;
+  height: 250px;
+}
+
 .producto-imagen {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   border-radius: 1rem;
 }
 
@@ -653,10 +658,9 @@ main {
   animation: fadeOut 0.5s forwards, slideOut 0.5s forwards;
 }
 
-
 /** CARRITO **/
 
-header h1 a{
+header h1 a {
   color: var(--clr-white);
 }
 
@@ -929,7 +933,7 @@ header h1 a{
   margin-bottom: 1rem;
 }
 
-.reciboBotonWspContainer{
+.reciboBotonWspContainer {
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -937,11 +941,11 @@ header h1 a{
   justify-content: center;
 }
 
-.compartirRecibo{
+.compartirRecibo {
   font-size: 1rem;
 }
 
-.botonWsp{
+.botonWsp {
   padding: 0.5rem 2rem;
   background-color: #22b357;
   border-radius: 0.2rem;
@@ -951,7 +955,7 @@ header h1 a{
   margin: 2rem 0;
 }
 
-.botonWsp a{
+.botonWsp a {
   text-decoration: none;
   color: var(--clr-white);
   display: flex;
@@ -961,7 +965,7 @@ header h1 a{
   justify-content: space-around;
 }
 
-.botonWsp a img{
+.botonWsp a img {
   padding: 0 0.2rem;
 }
 
@@ -999,7 +1003,7 @@ header h1 a{
     order: 1;
     font-weight: 500;
   }
-  
+
   #btnOrdenar {
     display: flex;
     flex-flow: row;
@@ -1010,10 +1014,9 @@ header h1 a{
     padding: 0.5rem 0;
   }
 
-  #botonAbrirModal{
+  #botonAbrirModal {
     padding: 0.5rem 0;
   }
-
 
   .modal-content {
     width: 80%;
@@ -1026,13 +1029,12 @@ header h1 a{
   }
 }
 
-
 @media screen and (max-width: 750px) {
   .logo {
     margin-top: 2rem;
     padding-right: 2rem;
   }
-  .logo a{
+  .logo a {
     color: var(--clr-white);
   }
   .wrapper {
@@ -1095,7 +1097,7 @@ header h1 a{
     width: 50%;
   }
 
-  #modalContainer{
+  #modalContainer {
     margin: 0.5rem 0.5rem;
     margin-left: auto;
     background-color: var(--clr-white);

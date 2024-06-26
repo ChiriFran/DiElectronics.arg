@@ -2,7 +2,7 @@
   {
     "id": "celular-01",
     "titulo": "Iphone 15",
-    "imagen": "assets/img/tienda/celulares/05.jpg",
+    "imagen": "assets/img/tienda/celulares/iphone-15-rosa.png",
     "categoria": {
       "nombre": "Celulares",
       "id": "celulares"
@@ -12,7 +12,7 @@
   {
     "id": "celular-05",
     "titulo": "Iphone 14",
-    "imagen": "assets/img/tienda/celulares/05.jpg",
+    "imagen": "assets/img/tienda/celulares/iphone-15-gris.png",
     "categoria": {
       "nombre": "Celulares",
       "id": "celulares"
